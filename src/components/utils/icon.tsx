@@ -15,7 +15,7 @@ export const Icon = ({ name, gradientName, ...props }: ISvgPropType) => {
   return (
     <svg
       {...props}
-      fill={gradientName ? `url(#:${gradientName})` : "currentColor"}
+      fill={gradientName ? `url(#${gradientName})` : "currentColor"}
     >
       <use href={`#${name}`} />
     </svg>
