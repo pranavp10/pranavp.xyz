@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Icon } from "../utils/utils.icon";
+import ThemeSwitch from "../utils/utils.ThemeSwitch";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,13 +30,15 @@ export const Header = () => {
             <Icon name="frame" gradientName="gradient" className="w-6 h-6" />
           </Link>
         </div>
-        <Link href="https://github.com" className="group">
-          <Icon
-            name="github"
-            className="w-6 h-6  hover:opacity-100 opacity-70"
-            gradientName="gradient"
-          />
-        </Link>
+        <div className="flex items-center gap-2">
+          <Link href="https://github.com" className="group">
+            <Icon
+              name="github"
+              className="w-6 h-6  hover:opacity-100 opacity-70"
+              gradientName="gradient"
+            />
+          </Link>
+        </div>
       </div>
     </header>
   );

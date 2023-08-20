@@ -1,9 +1,11 @@
+import ThemeSwitch from "../utils/utils.ThemeSwitch";
 import { Icon } from "../utils/utils.icon";
 
 export const Footer = () => {
   return (
     <footer className="flex flex-col items-center max-w-3xl m-auto py-10 sm:flex-row-reverse sm:justify-between">
       <div className="flex items-center space-x-4">
+        <ThemeSwitch />
         <a href="https://twitter.com/ThatsPranav" target="_blank">
           <Icon
             name="twitter"
