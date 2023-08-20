@@ -13,7 +13,7 @@ export const Section: FC<{
           <div className="bg-white p-1 rounded-full w-2 h-2 border-2 border-gray-200 -translate-x-[35%]" />
         )}
         <div>
-          <h3 className="animate-move-bg bg-gradient-to-r from-gray-500 via-white to-gray-500 bg-[length:400%] bg-clip-text text-2xl text-transparent sm:text-3xl md:text-4xl font-bold ml-2 md:ml-8">
+          <h3 className="animate-move-bg bg-gradient-to-r from-zinc-500 via-white to-zinc-500 bg-[length:400%] bg-clip-text text-2xl text-transparent sm:text-3xl md:text-4xl font-bold ml-2 md:ml-8">
             {title}
           </h3>
         </div>
