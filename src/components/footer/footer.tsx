@@ -11,14 +11,14 @@ export const Footer = () => {
             gradientName="gradient"
           />
         </a>
-        <a href="/https://github.com/pranavp10" target="_blank">
+        <a href="https://github.com/pranavp10" target="_blank">
           <Icon
             name="github"
             className="w-5 h-5  hover:opacity-100 opacity-70"
             gradientName="gradient"
           />
         </a>
-        <a href="/https://github.com/pranavp10" target="_blank">
+        <a href="https://www.linkedin.com/in/pranavp10/" target="_blank">
           <Icon
             name="linkedin"
             className="w-5 h-5  hover:opacity-100 opacity-70"
