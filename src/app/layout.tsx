@@ -6,6 +6,7 @@ import { ReactNode } from "react";
 import Header from "@/components/core/core.header";
 import { Footer } from "@/components/core/core.footer";
 import { ThemeProvider } from "@/providers/theme.providers";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
           <Footer />
           <IconsSprite />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
