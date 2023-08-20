@@ -13,7 +13,7 @@ const ThemeSwitch = () => {
   }, []);
 
   if (!mounted) {
-    return null;
+    return <div className="h-[26px]" />;
   }
 
   return (
@@ -24,7 +24,7 @@ const ThemeSwitch = () => {
           onClick={() => setTheme(tab.id)}
           className={`${
             theme === tab.id ? "" : "hover:text-white/60"
-          } relative rounded-full px-2 py-1 text-sm font-medium text-white outline-sky-400 transition focus-visible:outline-2`}
+          } relative rounded-full px-1 py-0.5 text-sm font-medium text-white outline-sky-400 transition focus-visible:outline-2`}
           style={{
             WebkitTapHighlightColor: "transparent",
           }}
@@ -49,14 +49,14 @@ export default ThemeSwitch;
 let tabs = [
   {
     id: "system",
-    label: <Icon name="monitor" className="w-4 h-4" gradientName="gradient" />,
+    label: <Icon name="monitor" className="w-3 h-3" gradientName="gradient" />,
   },
   {
     id: "dark",
-    label: <Icon name="moon" className="w-4 h-4" gradientName="gradient" />,
+    label: <Icon name="moon" className="w-3 h-3" gradientName="gradient" />,
   },
   {
     id: "light",
-    label: <Icon name="sun" className="w-4 h-4" gradientName="gradient" />,
+    label: <Icon name="sun" className="w-3 h-3" gradientName="gradient" />,
   },
 ];
