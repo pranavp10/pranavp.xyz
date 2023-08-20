@@ -7,11 +7,11 @@ export const IconTitleCard: FC<{
   icon?: ReactNode;
   experience?: string;
 }> = ({ description, icon, title, children }) => (
-  <div className="border-gray-50 rounded-xl md:rounded-[20px] relative px-3 py-2">
+  <div className="border-gray-50 rounded-xl md:rounded-[20px] relative sm:px-3 sm:py-2">
     {title && icon && (
       <div className="flex gap-2.5 md:gap-4 items-center">
         {icon}
-        <p className="font-display text-xl md:text-3xl font-extrabold tracking-tight">
+        <p className="font-display md:text-3xl font-medium md:font-extrabold tracking-tight">
           {title}
         </p>
       </div>

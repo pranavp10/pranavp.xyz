@@ -97,4 +97,4 @@ const Gear = () => (
 
 export default Gear;
 
-const iconClassName = `md:border-4 dark:border-zinc-900 border-zinc-100 rounded-xl md:rounded-2xl w-6 h-6 md:w-16 md:h-16 md:p-3`;
+const iconClassName = `border-2 md:border-4 dark:border-zinc-900 border-zinc-100 rounded-lg md:rounded-2xl w-9 h-9 md:w-16 md:h-16 md:p-3 p-1.5`;
