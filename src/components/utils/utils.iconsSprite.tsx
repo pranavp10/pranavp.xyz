@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { GradientSvg } from "./gradientSvg";
+import { GradientSvg } from "./utils.gradientSvg";
 
 export const IconsSprite = () => {
   const { theme } = useTheme();

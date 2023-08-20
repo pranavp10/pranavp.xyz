@@ -1,9 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Providers } from "./providers";
-import { IconsSprite } from "@/components/utils/icons-sprite";
+import { IconsSprite } from "@/components/utils/utils.iconsSprite";
 import { ReactNode } from "react";
+import Header from "@/components/core/core.header";
+import { Footer } from "@/components/core/core.footer";
+import { ThemeProvider } from "@/providers/theme.providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +19,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className={inter.className}>
-        <Providers>
+        <ThemeProvider>
+          <Header />
           {children}
+          <Footer />
           <IconsSprite />
-        </Providers>
+        </ThemeProvider>
       </body>
     </html>
   );

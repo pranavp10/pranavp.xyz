@@ -12,7 +12,7 @@ export const Container: FC<{
       <h1 className="text-3xl sm:text-4xl font-extrabold text-neutral-900 dark:text-neutral-100 lg:text-6xl lg:relative text-center">
         {title}
       </h1>
-      <p className="mt-4 sm:text-3xl text-center text-natural-300 dark:text-neutral-300">
+      <p className="mt-4 sm:text-3xl text-center text-natural-100 dark:text-neutral-300">
         {description}
       </p>
     </div>

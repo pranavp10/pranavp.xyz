@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Icon } from "../utils/icon";
+import { Icon } from "../utils/utils.icon";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
