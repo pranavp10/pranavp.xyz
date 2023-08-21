@@ -12,125 +12,139 @@ const VSCodeSetup = () => (
     title="VS Code Settings"
     description="This setup will help you to setup the vscode settings."
   >
-    <Section title="Step 1">
-      <IconTitleCard
-        icon={
-          <Icon gradientName="gradient" name="box" className={iconClassName} />
-        }
-        title="Download necessary files"
-      >
-        <div className="grid grid-cols-2 gap-6 mt-4">
-          <div className="flex flex-col gap-2">
-            <a
-              href="/download/operator-mono.zip"
-              download
-              className="transition-colors duration-300 ease-in-out hover:bg-zinc-100  hover:dark:bg-zinc-900  px-6 py-2.5 rounded-xl border-zinc-100 border-4 dark:border-zinc-900 flex items-center justify-center gap-4"
-            >
-              operator-mono.zip
-            </a>
-            <NumberList
-              lists={[
-                `Unzip the font's file`,
-                `Select all the fonts, right click, and click to Install`,
-              ]}
+    <div className="pt-20 pb-16 sm:px-2 px-4 relative">
+      <Section title="Step 1">
+        <IconTitleCard
+          icon={
+            <Icon
+              gradientName="gradient"
+              name="box"
+              className={iconClassName}
             />
-          </div>
-          <div className="flex flex-col gap-2">
-            <a
-              href="/download/vsc-extensions.txt"
-              download
-              className="transition-colors duration-300 ease-in-out hover:bg-zinc-100  hover:dark:bg-zinc-900  px-6 py-2.5 rounded-xl border-zinc-100 border-4 dark:border-zinc-900 flex items-center justify-center gap-4"
-            >
-              vsc-extensions.txt
-            </a>
-            <NumberList>
-              <p>
-                Place this file in{` `}
-                <b>downloads</b>
-              </p>
-              <p>
-                Open the vscode in{` `}
-                <b>downloads directory</b>
-              </p>
-              <p>
-                Install{` `}
-                <a
-                  href="https://marketplace.visualstudio.com/items?itemName=aslamanver.vsc-export"
-                  target="_blank"
-                  className="underline decoration-zinc-400 decoration-2 font-medium transition-all"
-                  rel="noreferrer"
-                >
-                  VSC Export & Import
-                </a>
-                {` `} extension in vs code.
-              </p>
-            </NumberList>
-          </div>
-        </div>
-      </IconTitleCard>
-    </Section>
-    <Section title="Step 2">
-      <IconTitleCard
-        icon={
-          <Icon gradientName="gradient" name="box" className={iconClassName} />
-        }
-        title="Installing all the extensions"
-      >
-        <NumberList>
-          <p>Open the vscode</p>
-          <p>
-            Open Prompt by press the <b>cmd</b> + <b>shift</b> + <b>p</b> key
-            <br />
-            <Kbd text="⌘" />
-            {` `}+{` `}
-            <Kbd text="⇧" />
-            {` `}+{` `}
-            <Kbd text="P" />
-          </p>
-          <TextCommand cmd="VSC Export & Import" />
-          <p>All extension will start to install</p>
-        </NumberList>
-      </IconTitleCard>
-    </Section>
-    <Section title="Step 3">
-      <IconTitleCard
-        icon={
-          <Icon
-            gradientName="gradient"
-            name="coding"
-            className={iconClassName}
-          />
-        }
-        title="VS Code Settings"
-      >
-        <NumberList>
-          <p>
-            Open Prompt by press the <b>cmd</b> + <b>shift</b> + <b>p</b> key
-            <br />
-            <Kbd text="⌘" />
-            {` `}+{` `}
-            <Kbd text="⇧" />
-            {` `}+{` `}
-            <Kbd text="P" />
-          </p>
-          <TextCommand cmd="Preferences: Open Settings (JSON)" />
-          <div className="mt-4">
-            <p>Copy the settings.json from the below window </p>
-            <div className="mt-6">
-              <Code code={settingsJSON} language="json" title="settings.json" />
+          }
+          title="Download necessary files"
+        >
+          <div className="grid grid-cols-2 gap-6 mt-4">
+            <div className="flex flex-col gap-2">
+              <a
+                href="/download/operator-mono.zip"
+                download
+                className="transition-colors duration-300 ease-in-out hover:bg-zinc-100  hover:dark:bg-zinc-900  px-6 py-2.5 rounded-xl border-zinc-100 border-4 dark:border-zinc-900 flex items-center justify-center gap-4"
+              >
+                operator-mono.zip
+              </a>
+              <NumberList
+                lists={[
+                  `Unzip the font's file`,
+                  `Select all the fonts, right click, and click to Install`,
+                ]}
+              />
+            </div>
+            <div className="flex flex-col gap-2">
+              <a
+                href="/download/vsc-extensions.txt"
+                download
+                className="transition-colors duration-300 ease-in-out hover:bg-zinc-100  hover:dark:bg-zinc-900  px-6 py-2.5 rounded-xl border-zinc-100 border-4 dark:border-zinc-900 flex items-center justify-center gap-4"
+              >
+                vsc-extensions.txt
+              </a>
+              <NumberList>
+                <p>
+                  Place this file in{` `}
+                  <b>downloads</b>
+                </p>
+                <p>
+                  Open the vscode in{` `}
+                  <b>downloads directory</b>
+                </p>
+                <p>
+                  Install{` `}
+                  <a
+                    href="https://marketplace.visualstudio.com/items?itemName=aslamanver.vsc-export"
+                    target="_blank"
+                    className="underline decoration-zinc-400 decoration-2 font-medium transition-all"
+                    rel="noreferrer"
+                  >
+                    VSC Export & Import
+                  </a>
+                  {` `} extension in vs code.
+                </p>
+              </NumberList>
             </div>
           </div>
-          <p>Past the code in the settings.json file in vs code</p>
-          <p>
-            Save the setting.json file{`  `}
-            <Kbd text="⌘" /> + <Kbd text="s" />
-            {`  `}
-            and restart the vscode.
-          </p>
-          <p>Done! 🚀</p>
-        </NumberList>
-      </IconTitleCard>
-    </Section>
+        </IconTitleCard>
+      </Section>
+      <Section title="Step 2">
+        <IconTitleCard
+          icon={
+            <Icon
+              gradientName="gradient"
+              name="box"
+              className={iconClassName}
+            />
+          }
+          title="Installing all the extensions"
+        >
+          <NumberList>
+            <p>Open the vscode</p>
+            <p>
+              Open Prompt by press the <b>cmd</b> + <b>shift</b> + <b>p</b> key
+              <br />
+              <Kbd text="⌘" />
+              {` `}+{` `}
+              <Kbd text="⇧" />
+              {` `}+{` `}
+              <Kbd text="P" />
+            </p>
+            <TextCommand cmd="VSC Export & Import" />
+            <p>All extension will start to install</p>
+          </NumberList>
+        </IconTitleCard>
+      </Section>
+      <Section title="Step 3">
+        <IconTitleCard
+          icon={
+            <Icon
+              gradientName="gradient"
+              name="coding"
+              className={iconClassName}
+            />
+          }
+          title="VS Code Settings"
+        >
+          <NumberList>
+            <p>
+              Open Prompt by press the <b>cmd</b> + <b>shift</b> + <b>p</b> key
+              <br />
+              <Kbd text="⌘" />
+              {` `}+{` `}
+              <Kbd text="⇧" />
+              {` `}+{` `}
+              <Kbd text="P" />
+            </p>
+            <TextCommand cmd="Preferences: Open Settings (JSON)" />
+            <div className="mt-4">
+              <p>Copy the settings.json from the below window </p>
+              <div className="mt-6">
+                <Code
+                  code={settingsJSON}
+                  language="json"
+                  title="settings.json"
+                />
+              </div>
+            </div>
+            <p>Past the code in the settings.json file in vs code</p>
+            <p>
+              Save the setting.json file{`  `}
+              <Kbd text="⌘" /> + <Kbd text="s" />
+              {`  `}
+              and restart the vscode.
+            </p>
+            <p>Done! 🚀</p>
+          </NumberList>
+        </IconTitleCard>
+      </Section>
+    </div>
   </Container>
 );
 

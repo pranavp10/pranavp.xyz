@@ -9,78 +9,80 @@ const Gear = () => (
     title="My Gear"
     description="This setup that helps me achieve my goals"
   >
-    <Section title="Devices">
-      {gears.map((gear) => (
-        <IconTitleCard
-          key={gear.title}
-          icon={
-            <Icon
-              name={gear.iconsName}
-              className={iconClassName}
-              gradientName="gradient"
-            />
-          }
-          title={gear.title}
-        />
-      ))}
-    </Section>
-    <div className="mt-4 sm:mt-6">
-      <Section title="Software and Apps">
-        <IconTitleCard
-          icon={
-            <Icon
-              name="coding"
-              className={iconClassName}
-              gradientName="gradient"
-            />
-          }
-          title="Coding Tools"
-        >
-          <NumberList>
-            {codingApps.map((app) => (
-              <a target="_blank" key={app.href} href={app.href}>
-                {app.title}
-              </a>
-            ))}
-          </NumberList>
-        </IconTitleCard>
-        <IconTitleCard
-          icon={
-            <Icon
-              name="box"
-              className={iconClassName}
-              gradientName="gradient"
-            />
-          }
-          title="Web Extensions"
-        >
-          <NumberList>
-            {browserExtensions.map((extension) => (
-              <a target="_blank" key={extension.href} href={extension.href}>
-                {extension.title}
-              </a>
-            ))}
-          </NumberList>
-        </IconTitleCard>
-        <IconTitleCard
-          icon={
-            <Icon
-              name="laptop"
-              className={iconClassName}
-              gradientName="gradient"
-            />
-          }
-          title="Softwares"
-        >
-          <NumberList>
-            {softwares.map((software) => (
-              <a target="_blank" key={software.href} href={software.href}>
-                {software.title}
-              </a>
-            ))}
-          </NumberList>
-        </IconTitleCard>
+    <div className="pt-20 pb-16 sm:px-2 px-4 relative">
+      <Section title="Devices">
+        {gears.map((gear) => (
+          <IconTitleCard
+            key={gear.title}
+            icon={
+              <Icon
+                name={gear.iconsName}
+                className={iconClassName}
+                gradientName="gradient"
+              />
+            }
+            title={gear.title}
+          />
+        ))}
       </Section>
+      <div className="mt-4 sm:mt-6">
+        <Section title="Software and Apps">
+          <IconTitleCard
+            icon={
+              <Icon
+                name="coding"
+                className={iconClassName}
+                gradientName="gradient"
+              />
+            }
+            title="Coding Tools"
+          >
+            <NumberList>
+              {codingApps.map((app) => (
+                <a target="_blank" key={app.href} href={app.href}>
+                  {app.title}
+                </a>
+              ))}
+            </NumberList>
+          </IconTitleCard>
+          <IconTitleCard
+            icon={
+              <Icon
+                name="box"
+                className={iconClassName}
+                gradientName="gradient"
+              />
+            }
+            title="Web Extensions"
+          >
+            <NumberList>
+              {browserExtensions.map((extension) => (
+                <a target="_blank" key={extension.href} href={extension.href}>
+                  {extension.title}
+                </a>
+              ))}
+            </NumberList>
+          </IconTitleCard>
+          <IconTitleCard
+            icon={
+              <Icon
+                name="laptop"
+                className={iconClassName}
+                gradientName="gradient"
+              />
+            }
+            title="Softwares"
+          >
+            <NumberList>
+              {softwares.map((software) => (
+                <a target="_blank" key={software.href} href={software.href}>
+                  {software.title}
+                </a>
+              ))}
+            </NumberList>
+          </IconTitleCard>
+        </Section>
+      </div>
     </div>
   </Container>
 );
