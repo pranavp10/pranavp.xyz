@@ -4,7 +4,6 @@ import Highlight, { Language, Prism } from "prism-react-renderer";
 import dracula from "prism-react-renderer/themes/nightOwlLight";
 import Window from "./core.window";
 
-console.log(dracula);
 type CodeProps = {
   code: string;
   title: string;
