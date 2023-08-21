@@ -7,6 +7,7 @@ import Header from "@/components/core/core.header";
 import { Footer } from "@/components/core/core.footer";
 import { ThemeProvider } from "@/providers/theme.providers";
 import { Analytics } from "@vercel/analytics/react";
+import { SonnerProvider } from "@/providers/sonner.provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head />
       <body className={inter.className}>
         <ThemeProvider>
+          <SonnerProvider />
           <Header />
           {children}
           <Footer />

@@ -8,6 +8,11 @@ const Home = () => (
     title="Hey, I’m Pranav Patel"
     description="A Self taught Software engineer with 4+ years of experience who likes to build the product from the scratch with the eye on design"
   >
+    <Section title="Work">
+      <div className=" mb-10">
+        <p>I am working at orah</p>
+      </div>
+    </Section>
     <Section title="Development Setup">
       <div className="grid grid-cols-2 gap-4 mb-10">
         {devSetup.map((item) => (
