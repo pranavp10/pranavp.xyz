@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <IconsSprite />
           <Analytics />
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
