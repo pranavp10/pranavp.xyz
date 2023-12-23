@@ -1,5 +1,4 @@
 import { Container } from "@/components/core/core.container";
-import { Footer } from "@/components/core/core.footer";
 import { Section } from "@/components/core/core.section";
 import { Icon } from "@/components/utils/utils.icon";
 import Link from "next/link";
@@ -24,24 +23,21 @@ const Home = () => (
       </a>
     </div>
     <div className="pt-10 sm:px-2 px-4 relative">
-      <Section title="Fun work">
+      <Section title="Experience">
         <div className="mb-10 grid grid-cols-2 gap-4">
           <Link
-            href="/react-lib"
-            className="transition duration-200 ease-in-out cursor-pointer transform hover:scale-[1.01]"
+            href="/skills"
+            className="duration-200 ease-in-out cursor-pointer"
           >
-            <div className="pt-2 pb-4 px-4 border-4 border-zinc-100 dark:border-zinc-900 rounded-2xl w-full relative">
+            <div className="pt-2 pb-4 px-4 border-4 border-zinc-100 dark:border-zinc-900 rounded-2xl w-full relative hover:bg-zinc-100 dark:hover:bg-zinc-900 transition">
               <Icon
                 name="coding"
                 className="w-8 h-8 mt-2"
                 gradientName="gradient"
               />
-              <p className="font-medium text-xl mt-2.5 ml-0.5">
-                Frontend Libraries
-              </p>
+              <p className="font-medium text-xl mt-2.5 ml-0.5">Skills</p>
               <p className="text-zinc-700 dark:text-zinc-500 mt-1 ml-0.5">
-                Frontend echo system to help you build your frontend website
-                faster
+                Technology I have learnt form my years of experience
               </p>
             </div>
           </Link>
@@ -52,7 +48,7 @@ const Home = () => (
           {devSetup.map((item) => (
             <div key={item.title}>
               <div className="group relative">
-                <div className="flex flex-wrap justify-center w-full rounded-2xl transition duration-200 ease-in-out cursor-pointer transform group-hover:scale-[1.01] motion-reduce:transform-none">
+                <div className="flex flex-wrap justify-center w-full rounded-2xl transition duration-200 ease-in-out cursor-pointer group-hover:bg-zinc-100 dark:group-hover:bg-zinc-900">
                   <div className="pt-2 pb-4 px-4 border-4 border-zinc-100 dark:border-zinc-900 rounded-2xl w-full relative">
                     <Link href={item.href} className="absolute inset-0 z-0" />
                     <div className="flex gap-4">
@@ -82,15 +78,6 @@ const Home = () => (
 );
 
 export default Home;
-
-const icon = [
-  {
-    iconName: "gear",
-    title: "string",
-    description: "string",
-    href: "string",
-  },
-];
 
 const devSetup = [
   {

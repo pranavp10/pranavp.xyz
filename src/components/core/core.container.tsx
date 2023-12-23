@@ -7,7 +7,7 @@ export const Container: FC<{
   subTitle?: string;
   showRightBorder?: boolean;
 }> = ({ children, title, description, subTitle, showRightBorder }) => (
-  <div className="max-w-3xl m-auto py-20">
+  <div className="max-w-3xl m-auto py-14">
     <div className="sm:px-2 px-4">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-neutral-900 dark:text-neutral-100 lg:text-6xl lg:relative text-center ">
         {title}

@@ -19,20 +19,22 @@ import { FC } from "react";
 const ReactLib = () => {
   return (
     <Container
-      title="Frontend Libraries"
-      description="Frontend echo system to help you build your frontend website faster"
+      title="Skills"
+      description="Technology I have learnt form my years of experience"
     >
-      {ListOfLibraries.map((item, index) => (
-        <Section title={item.title} key={item.title}>
-          <IconTitleCard>
-            <div className="grid grid-cols-2 gap-6 mb-8">
-              {item.list.map((data) => (
-                <LibraryCard {...data} key={data.name} />
-              ))}
-            </div>
-          </IconTitleCard>
-        </Section>
-      ))}
+      <div className="pt-14">
+        {ListOfLibraries.map((item) => (
+          <Section title={item.title} key={item.title}>
+            <IconTitleCard>
+              <div className="grid grid-cols-2 gap-6 mb-8">
+                {item.list.map((data) => (
+                  <LibraryCard {...data} key={data.name} />
+                ))}
+              </div>
+            </IconTitleCard>
+          </Section>
+        ))}
+      </div>
     </Container>
   );
 };
