@@ -8,70 +8,70 @@ const Home = () => (
     title="Hey, I’m Pranav Patel"
     description="A Self taught Software engineer with 4+ years of experience who likes to build the product from the scratch with the eye on design"
   >
-    <div className="flex items-center space-x-6 mt-6 justify-center">
+    <div className="flex space-x-2 mt-3 items-center px-4">
       <a href="https://twitter.com/ThatsPranav" target="_blank">
-        <Icon name="twitter" className="w-8 h-8 hover:opacity-100 opacity-70" />
+        <Icon name="twitter" className="w-5 h-5 hover:opacity-100 opacity-70" />
       </a>
       <a href="https://github.com/pranavp10" target="_blank">
-        <Icon name="github" className="w-8 h-8  hover:opacity-100 opacity-70" />
+        <Icon name="github" className="w-5 h-5 hover:opacity-100 opacity-70" />
       </a>
       <a href="https://www.linkedin.com/in/pranavp10/" target="_blank">
         <Icon
           name="linkedin"
-          className="w-8 h-8  hover:opacity-100 opacity-70"
+          className="w-5 h-5  hover:opacity-100 opacity-70"
         />
       </a>
     </div>
-    <div className="pt-10 sm:px-2 px-4 relative">
+    <div className="mt-20 px-4">
       <Section title="Experience">
-        <div className="mb-10 grid grid-cols-2 gap-4">
+        <div className="mt-3">
           <Link
             href="/skills"
             className="duration-200 ease-in-out cursor-pointer"
           >
-            <div className="pt-2 pb-4 px-4 border-4 border-zinc-100 dark:border-zinc-900 rounded-2xl w-full relative hover:bg-zinc-100 dark:hover:bg-zinc-900 transition">
-              <Icon
-                name="coding"
-                className="w-8 h-8 mt-2"
-                gradientName="gradient"
-              />
-              <p className="font-medium text-xl mt-2.5 ml-0.5">Skills</p>
-              <p className="text-zinc-700 dark:text-zinc-500 mt-1 ml-0.5">
-                Technology I have learnt form my years of experience
-              </p>
+            <div className="p-3 border border-[#FAFAFA] dark:border-zinc-900 rounded-xl w-full relative hover:bg-zinc-100 dark:hover:bg-[#101010] transition flex items-center gap-3">
+              <div className="h-12 w-12 bg-[#ffffff0a] rounded-md flex justify-center items-center">
+                <Icon
+                  name="coding"
+                  className="w-6 h-6"
+                  gradientName="gradient"
+                />
+              </div>
+              <div>
+                <p className="text-sm">Skills</p>
+                <p className="text-sm text-[#fafafaa3]">
+                  Technology I have learnt form my years of experience
+                </p>
+              </div>
             </div>
           </Link>
         </div>
       </Section>
+    </div>
+    <div className="mt-20 px-4">
       <Section title="Development Setup">
-        <div className="grid grid-cols-2 gap-4 mb-10">
-          {devSetup.map((item) => (
-            <div key={item.title}>
-              <div className="group relative">
-                <div className="flex flex-wrap justify-center w-full rounded-2xl transition duration-200 ease-in-out cursor-pointer group-hover:bg-zinc-100 dark:group-hover:bg-zinc-900">
-                  <div className="pt-2 pb-4 px-4 border-4 border-zinc-100 dark:border-zinc-900 rounded-2xl w-full relative">
-                    <Link href={item.href} className="absolute inset-0 z-0" />
-                    <div className="flex gap-4">
-                      <Icon
-                        name={item.iconName}
-                        className="w-6 h-6 mt-2 flex-shrink-0"
-                        gradientName="gradient"
-                      />
-                      <div className="flex flex-col">
-                        <div>
-                          <p className="text-xl leading-none font-semibold my-2">
-                            {item.title}
-                          </p>
-                          <p className="text-sm">{item.description}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+        {devSetup.map((item) => (
+          <div className="mt-3" key={item.title}>
+            <Link
+              href={item.href}
+              className="duration-200 ease-in-out cursor-pointer"
+            >
+              <div className="p-3 border border-[#FAFAFA] dark:border-zinc-900 rounded-xl w-full relative hover:bg-zinc-100 dark:hover:bg-[#101010] transition flex items-center gap-3">
+                <div className="h-12 w-12 bg-[#ffffff0a] rounded-md flex justify-center items-center">
+                  <Icon
+                    name={item.iconName}
+                    className="w-6 h-6"
+                    gradientName="gradient"
+                  />
+                </div>
+                <div>
+                  <p className="text-sm">{item.title}</p>
+                  <p className="text-sm text-[#fafafaa3]">{item.description}</p>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            </Link>
+          </div>
+        ))}
       </Section>
     </div>
   </Container>

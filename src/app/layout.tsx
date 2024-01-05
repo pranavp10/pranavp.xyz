@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={inter.className}>
+      <body className={`dark:bg-[#090909] ${inter.className}`}>
         <ThemeProvider>
           <SonnerProvider />
           <Header />

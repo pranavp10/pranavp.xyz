@@ -25,7 +25,7 @@ const Gear = () => (
           />
         ))}
       </Section>
-      <div className="mt-4 sm:mt-6">
+      <div className="mt-44">
         <Section title="Software and Apps">
           <IconTitleCard
             icon={
@@ -89,7 +89,7 @@ const Gear = () => (
 
 export default Gear;
 
-const iconClassName = `border-2 md:border-4 dark:border-zinc-900 border-zinc-100 rounded-lg md:rounded-2xl w-9 h-9 md:w-16 md:h-16 md:p-3 p-1.5`;
+const iconClassName = `border-2 md:border-4 bg-[#ffffff0a] dark:border-zinc-900 border-zinc-100 rounded-lg md:rounded-2xl w-9 h-9 md:w-16 md:h-16 md:p-3 p-1.5`;
 
 const gears = [
   {
