@@ -1,5 +1,7 @@
-import BasicCard from "./component/basicCard";
-import ProjectCard from "./component/projectCard";
+import BasicCard from "@/components/card/basicCard";
+import ProjectCard from "@/components/card/projectCard";
+import { projects } from "@/data/projectData";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -14,13 +16,13 @@ const Home = () => {
         <div className="mt-4 flex gap-2 items-center">
           <a
             href="mailto:hi@pranavp10.com?subject=Work inquiry"
-            className="text-highlight bg-highlight-50 px-4 rounded-lg py-1.5 text-sm font-medium hover:bg-highlight-100"
+            className="text-highlight bg-highlight-50 px-4 rounded-lg py-1.5 text-sm font-medium hover:bg-highlight-100 transition duration-300 ease-in-out"
           >
             Open for project -{">"}
           </a>
           <a
             href="mailto:hi@pranavp10.com"
-            className="text-primary-white-300 bg-primary-black-link-hover px-4 rounded-lg py-1.5 text-sm font-medium hover:text-primary-white "
+            className="text-primary-white-300 bg-primary-black-link-hover px-4 rounded-lg py-1.5 text-sm font-medium hover:text-primary-white transition duration-300 ease-in-out"
           >
             hi@pranavp10.com
           </a>
@@ -28,15 +30,26 @@ const Home = () => {
         <div className="mt-16">
           <h2 className="text-xl">Projects</h2>
           <div className="mt-3 grid sm:grid-cols-2 gap-3">
-            <ProjectCard
-              link="http://www.aidetective.xyz/"
-              displayLink="www.aidetective.xyz"
-              description="Search Top AI SaaS Products"
-              githubLink="sdfs"
-              techStack={["Nextjs", "Prisma", "Tailwind"]}
-              title="AI Detective"
-              imageUrl="/ai-detective-logo.png"
-            />
+            {projects.map((project) => (
+              <ProjectCard
+                key={project.link}
+                link={project.link}
+                displayLink={project.displayLink}
+                description={project.description}
+                githubLink={project.githubLink}
+                techStack={project.techStack}
+                title={project.title}
+                imageUrl={project.imageUrl}
+              />
+            ))}
+          </div>
+          <div className="mt-3 flex justify-center">
+            <Link
+              href="/projects"
+              className="text-primary-white-300 px-4 rounded-lg py-2.5 text-sm font-medium hover:text-primary-white border border-primary-white-50 hover:bg-primary-black-link-hover  w-full text-center transition duration-300 ease-in-out"
+            >
+              Sell all
+            </Link>
           </div>
         </div>
         <div className="mt-16">
