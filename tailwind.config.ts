@@ -1,24 +1,27 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  darkMode: 'class',
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  keyframes: {
-    'move-bg': {
-      to: {
-        backgroundPosition: '400% 0',
-      },
+  theme: {
+    extend: {
+      colors:
+      {
+        'primary-black': '#090909',
+        'primary-white': '#fafafa',
+        'primary-black-link-hover': '#131313',
+        'primary-white-50': '#ffffff0a',
+        'primary-white-100': '#ffffff1a',
+        'primary-white-300': '#fafafaa3',
+        'primary-border': '#FAFAFA',
+        'primary-card': '#101010',
+        'highlight': '#ff8000',
+        'highlight-50': '#ff80001a',
+        'highlight-100': '#ff80002a'
+      }
     },
-  },
-  animation: {
-    'move-bg': 'move-bg 8s infinite linear',
-  },
-  backgroundSize: {
-    'size-300': '300% 300%',
   },
   plugins: [],
 }
