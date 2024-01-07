@@ -48,6 +48,10 @@ const links = [
     title: "Blog",
     link: "/blog",
   },
+  {
+    title: "Projects",
+    link: "/projects",
+  },
 ];
 
 export default NavBar;
