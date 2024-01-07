@@ -48,7 +48,7 @@ const Page = () => (
             </a>
             <NumberList>
               <p className="text-primary-white-300 text-pretty font-mono text-sm">
-                Unzip the font's file
+                Unzip the font&apos;s file
               </p>
               <p className="text-primary-white-300 text-pretty font-mono text-sm">
                 Select all the fonts, right click, and click to Install

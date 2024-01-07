@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <main className="max-w-2xl w-full m-auto mb-36">
       <header className="mt-16">
-        <h1 className="text-xl">Hello, I'm Pranav Patel! 👋🏻</h1>
+        <h1 className="text-xl">Hello, I&apos;m Pranav Patel! 👋🏻</h1>
         <p className="mt-6 text-primary-white-300 text-pretty font-mono text-sm">
           A self-taught Software Engineer and Open Source Contributor, with a
           focus on JavaScript, React, and UI/UX design. Enthusiastic about

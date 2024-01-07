@@ -17,17 +17,17 @@ const Page = () => {
       <header className="mt-16">
         <h1 className="text-xl">Tools & technology </h1>
         <p className="mt-3 text-primary-white-300 text-pretty font-mono text-sm">
-          Throughout my professional journey, I've gained extensive technology
-          expertise, honing skills in frameworks, languages, and methodologies.
-          This hands-on experience not only deepened my software development
-          proficiency but also enhanced problem-solving and broadened my tech
-          perspective. Continuous learning has shaped my adaptability in the
-          dynamic tech landscape.
+          Throughout my professional journey, I&apos;ve gained extensive
+          technology expertise, honing skills in frameworks, languages, and
+          methodologies. This hands-on experience not only deepened my software
+          development proficiency but also enhanced problem-solving and
+          broadened my tech perspective. Continuous learning has shaped my
+          adaptability in the dynamic tech landscape.
         </p>
 
         <div className="pt-14">
           {ListOfLibraries.map((item) => (
-            <div>
+            <div key={item.title}>
               <h2 className="ml-2" key={item.title}>
                 {item.title}
               </h2>
