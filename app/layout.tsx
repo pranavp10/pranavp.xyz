@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import type {} from "next";
 import NavBar from "@/components/navbar";
 import { IconsSprite } from "../components/icon/iconsSprite";
 
