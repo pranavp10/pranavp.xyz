@@ -4,6 +4,38 @@ import IconTitleCard from "../gears/components/iconsTitleCars";
 import Kbd from "@/components/kbd";
 import Window from "@/components/window";
 import Code from "@/components/code";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/vscode-setup",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
+  title:
+    "My Daily Coding Companion: A Deep Dive into My VS Code Setup | Pranav P",
+  description:
+    "Unlock the potential of Visual Studio Code with an insider's look into the settings that shape my daily coding experience. Dive into the heart of efficiency as I share the VS Code configurations I rely on every day. From personalized preferences to must-have extensions, this exploration will empower you to optimize your own coding environment. Elevate your coding game with insights into the VS Code setup that fuels my productivity",
+  keywords: [
+    "vs code",
+    "JavaScript",
+    "React",
+    "UI/UX",
+    "Portfolio",
+    "Settings",
+  ],
+  robots: "index, follow",
+  openGraph: {
+    title:
+      "My Daily Coding Companion: A Deep Dive into My VS Code Setup | Pranav P",
+    description:
+      "Unlock the potential of Visual Studio Code with an insider's look into the settings that shape my daily coding experience. Dive into the heart of efficiency as I share the VS Code configurations I rely on every day. From personalized preferences to must-have extensions, this exploration will empower you to optimize your own coding environment. Elevate your coding game with insights into the VS Code setup that fuels my productivity",
+    url: `${process.env.PUBLIC_URL}/vscode-setup`,
+    type: "website",
+    siteName: "Vs Code Settings | Pranav P",
+  },
+};
 
 const Page = () => (
   <main className="max-w-2xl w-full m-auto mb-36">
