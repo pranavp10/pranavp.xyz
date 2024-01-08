@@ -37,10 +37,6 @@ const links = [
     link: "/about",
   },
   {
-    title: "Projects",
-    link: "/projects",
-  },
-  {
     title: "Work",
     link: "/work",
   },
