@@ -4,9 +4,34 @@ import {
   gears,
   softwares,
 } from "@/data/gearData";
-import IconTitleCard from "./iconsTitleCars";
+import IconTitleCard from "./components/iconsTitleCars";
 import Icon from "@/components/icon/icon";
 import NumberList from "@/components/numberList";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/gears",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
+  title:
+    "Optimizing Productivity: Unveiling the Essential Gears for Seamless Workflow | Pranav P",
+  description:
+    "Embark on a voyage through my professional evolution, where I've cultivated a wealth of technology expertise. Dive into the depths of my hands-on experience, as I hone skills in diverse frameworks, languages, and methodologies. This journey not only elevates my software development proficiency but also enriches problem-solving capabilities and widens my tech perspective. Join me in navigating the dynamic tech landscape, fueled by a commitment to continuous learning and adaptability",
+  keywords: ["Laptop", "JavaScript", "React", "UI/UX", "Portfolio", "Gears"],
+  robots: "index, follow",
+  openGraph: {
+    title:
+      "Optimizing Productivity: Unveiling the Essential Gears for Seamless Workflow | Pranav P",
+    description:
+      "Discover the secret to a seamless and efficient workflow as I unveil the productivity tools that power my daily endeavors. Delve into the tech landscape that keeps me at the forefront of productivity, exploring the gears that transform tasks into achievements. From essential tools to innovative solutions, join me in unlocking the potential of a streamlined work process. Elevate your own productivity game by exploring the gears that make every moment count.",
+    url: `${process.env.PUBLIC_URL}/gears`,
+    type: "website",
+    siteName: "Gears | Pranav P",
+  },
+};
 
 const Page = () => (
   <main className="max-w-2xl w-full m-auto mb-36">
