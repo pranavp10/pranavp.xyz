@@ -15,7 +15,7 @@ const Page = () => {
   return (
     <main className="max-w-2xl w-full m-auto mb-36">
       <header className="mt-16">
-        <h1 className="text-xl">Tools & technology </h1>
+        <h1 className="text-xl">Skills & technology </h1>
         <p className="mt-3 text-primary-white-300 text-pretty font-mono text-sm">
           Throughout my professional journey, I&apos;ve gained extensive
           technology expertise, honing skills in frameworks, languages, and

@@ -58,7 +58,7 @@ const Home = () => {
             <BasicCard
               link="/skills"
               iconName="coding"
-              title="Tools & technology"
+              title="Skill & technology"
               description="The knowledge I've gained through years of experience in technology."
             />
           </div>
