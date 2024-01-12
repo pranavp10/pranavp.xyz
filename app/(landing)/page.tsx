@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <main className="max-w-2xl w-full m-auto mb-36  mt-16">
+    <main className="max-w-2xl w-full m-auto   mt-16">
       <header>
         <h1 className="text-xl">
           Hello, I&apos;m Pranav Patel! <span className="wave">👋🏻</span>

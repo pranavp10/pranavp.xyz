@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 };
 
 const Page = () => (
-  <main className="max-w-2xl w-full m-auto mb-36">
+  <main className="max-w-2xl w-full m-auto ">
     <header className="mt-16">
       <h1 className="text-xl">Gears Used </h1>
       <p className="mt-3 text-primary-white-300 text-pretty font-mono text-sm">

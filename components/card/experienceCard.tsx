@@ -27,7 +27,7 @@ export const ExperienceCard = ({
         </p>
       </div>
       <p className="mt-1.2 text-sm">{title}</p>
-      <ul className="list-disc text-primary-white-300 tracking-wider font-mono text-xs grid gap-2 ml-3 mt-2 text-pretty">
+      <ul className="text-primary-white-400 tracking-wider font-mono text-[13px] grid gap-2.5 mt-2 text-pretty">
         {descriptions.map((description: string) => (
           <li key={description}>{description}</li>
         ))}

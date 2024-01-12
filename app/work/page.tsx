@@ -1,6 +1,6 @@
 import { ExperienceCard } from "@/components/card/experienceCard";
 import Icon from "@/components/icon/icon";
-import { RESUME_DATA } from "@/data/resumaData";
+import { RESUME_DATA } from "@/data/resumeData";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +8,7 @@ const Page = () => {
   const { name, about, avatarUrl, contact, summary, work, skills, education } =
     RESUME_DATA;
   return (
-    <main className="max-w-2xl w-full m-auto mb-36">
+    <main className="max-w-2xl w-full m-auto ">
       <div className="flex mt-16 gap-5 items-center">
         <header>
           <h1 className="text-2xl font-bold">{name}</h1>

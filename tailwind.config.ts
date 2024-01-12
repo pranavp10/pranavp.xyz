@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './data/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -15,6 +16,7 @@ const config: Config = {
         'primary-white-50': '#ffffff0a',
         'primary-white-100': '#ffffff1a',
         'primary-white-300': '#fafafaa3',
+        'primary-white-400': '#fafafaa5',
         'primary-border': '#FAFAFA',
         'primary-card': '#101010',
         'highlight': '#ff8000',

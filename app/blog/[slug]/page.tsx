@@ -7,7 +7,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
   const post = await getBlogDetails(params.slug);
   if (!post) return notFound();
   return (
-    <main className="max-w-2xl w-full m-auto mb-36">
+    <main className="max-w-2xl w-full m-auto ">
       <header className="mt-16">
         <div className="flex justify-between items-center w-full">
           <ul className="flex items-center gap-2 flex-wrap">

@@ -4,7 +4,7 @@ import Icon from "./icon/icon";
 import { NavLinkItem } from "./NavLinkItem";
 
 const NavBar = () => (
-  <nav className="sticky top-4">
+  <nav className="sticky top-4 z-10">
     <div className="max-w-2xl w-full m-auto flex flex-wrap items-center justify-between">
       <Link href="/" className="flex items-center">
         <Image

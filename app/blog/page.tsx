@@ -4,7 +4,7 @@ import { BlogType } from "@/types";
 
 const Page = async () => {
   return (
-    <main className="max-w-2xl w-full m-auto mb-36">
+    <main className="max-w-2xl w-full m-auto ">
       <header className="mt-16">
         <h1 className="text-xl">Blog</h1>
         <p className="mt-6 text-primary-white-300 text-pretty font-mono text-sm">
