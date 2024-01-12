@@ -54,9 +54,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  ...props
 }: {
   children: React.ReactNode;
 }) {
+  console.log(props);
   return (
     <html lang="en">
       <body

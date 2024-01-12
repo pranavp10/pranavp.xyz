@@ -1,59 +1,35 @@
-const BlogCard = ({
-  link,
-  title,
-  techStack,
-  description,
-  github,
-  imageUrl,
-  displayLink,
-}: {
-  link: string;
-  title: string;
-  description: string;
-  github: string;
-  techStack: string[];
-  imageUrl: string;
-  displayLink: string;
-}) => (
-  <a
-    href={link}
-    target="_blank"
-    className="duration-200 ease-in-out cursor-pointer p-4 border border-primary-white-50 rounded-md hover:bg-primary-card flex flex-col"
+import { BlogType } from "@/types";
+import Link from "next/link";
+
+export const BlogCard = ({ blogDetails }: { blogDetails: BlogType }) => (
+  <Link
+    href={`/blog/${blogDetails.slug}`}
+    className={`transition duration-200 ease-in-out border border-primary-white-50 flex flex-col relative bg-origin-border bg-contain rounded-lg w-full group hover:border-primary-white-100`}
+    style={{
+      backgroundImage: `url('/blog/${blogDetails.imageName}-card.png')`,
+    }}
   >
-    <div className="flex gap-3 items-center">
-      <div className="mt-4 mb-3">
-        <p className="font-medium">{title}</p>
-        <div className="flex items-center gap-1">
-          <p className="text-xs text-primary-white-300">{displayLink}</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M7 7h10v10" />
-            <path d="M7 17 17 7" />
-          </svg>
+    <div className="mt-20 bg-gradient-to-t from-primary-black group-hover:via-primary-black/25 via-primary-black/70 to-primary-black/10 group-hover:to-primary-black/0 pb-4 px-4 pt-10 rounded-lg flex flex-col">
+      <div className="flex gap-3 items-center">
+        <div className="mt-4 w-full">
+          <p className="font-medium">{blogDetails.title}</p>
+          <div className="flex justify-between items-center w-full mt-5">
+            <ul className="flex items-center gap-2 flex-wrap">
+              {blogDetails.tags.map((tag) => (
+                <li key={tag}>
+                  <p className="text-primary-white-300 bg-primary-black-link-hover text-pretty text-xs font-mono px-1.5 py-0.5 rounded-full border border-primary-white-50">
+                    {tag}
+                  </p>
+                </li>
+              ))}
+            </ul>
+
+            <p className="text-primary-white-300 text-pretty text-xs font-mono">
+              {blogDetails.date}
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <p className="text-primary-white-300 text-pretty font-mono text-sm">
-      {description}
-    </p>
-    <ul className="flex items-center gap-2 flex-wrap mt-3">
-      {techStack.map((tech) => (
-        <li
-          className="text-xs rounded-md bg-primary-black-link-hover px-2 py-1"
-          key={tech}
-        >
-          {tech}
-        </li>
-      ))}
-    </ul>
-  </a>
+  </Link>
 );

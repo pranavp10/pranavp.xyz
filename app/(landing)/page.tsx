@@ -1,13 +1,18 @@
 import BasicCard from "@/components/card/basicCard";
+import { BlogCard } from "@/components/card/blogCard";
 import ProjectCard from "@/components/card/projectCard";
+import { blogData } from "@/data/blogDate";
 import { projects } from "@/data/projectData";
+import { BlogType } from "@/types";
 import Link from "next/link";
 
 const Home = () => {
   return (
-    <main className="max-w-2xl w-full m-auto mb-36">
-      <header className="mt-16">
-        <h1 className="text-xl">Hello, I&apos;m Pranav Patel! 👋🏻</h1>
+    <main className="max-w-2xl w-full m-auto mb-36  mt-16">
+      <header>
+        <h1 className="text-xl">
+          Hello, I&apos;m Pranav Patel! <span className="wave">👋🏻</span>
+        </h1>
         <p className="mt-6 text-primary-white-300 text-pretty font-mono text-sm">
           A self-taught Software Engineer and Open Source Contributor, with a
           focus on JavaScript, React, and UI/UX design. Enthusiastic about
@@ -52,6 +57,23 @@ const Home = () => {
             </Link>
           </div>
         </div>
+        <div className="mt-16">
+          <h2 className="text-xl">Blog</h2>
+          <div className="mt-3 grid sm:grid-cols-2 gap-3">
+            {blogData.map((blogDetails: BlogType) => (
+              <BlogCard blogDetails={blogDetails} key={blogDetails?.slug} />
+            ))}
+          </div>
+          <div className="mt-3 flex justify-center">
+            <Link
+              href="/blog"
+              className="text-primary-white-300 px-4 rounded-lg py-2.5 text-sm font-medium hover:text-primary-white border border-primary-white-50 hover:bg-primary-black-link-hover  w-full text-center transition duration-300 ease-in-out"
+            >
+              Sell all
+            </Link>
+          </div>
+        </div>
+
         <div className="mt-16">
           <h2 className="text-xl">Experience</h2>
           <div className="mt-3 flex flex-col gap-3">

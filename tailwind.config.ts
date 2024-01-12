@@ -19,7 +19,8 @@ const config: Config = {
         'primary-card': '#101010',
         'highlight': '#ff8000',
         'highlight-50': '#ff80001a',
-        'highlight-100': '#ff80002a'
+        'highlight-100': '#ff80002a',
+        'cream-800': '#CE9178FF'
       }
     },
   },

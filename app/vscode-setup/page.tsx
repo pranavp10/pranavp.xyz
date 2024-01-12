@@ -2,9 +2,9 @@ import Icon from "@/components/icon/icon";
 import NumberList from "@/components/numberList";
 import IconTitleCard from "../gears/components/iconsTitleCars";
 import Kbd from "@/components/kbd";
-import Window from "@/components/window";
-import Code from "@/components/code";
 import { Metadata } from "next";
+import { titleBar } from "@/components/code/tabContainer";
+import { CodeWindow } from "@/components/code/code";
 
 export const metadata: Metadata = {
   alternates: {
@@ -180,11 +180,11 @@ const Page = () => (
                   Enter the text in prompt and press <Kbd text="Enter ⏎" />
                 </p>
                 <div className="mt-3">
-                  <Window title="Prompt.txt" textToCopy="VSC Export & Import">
-                    <p className="text-primary-white-300 text-pretty font-mono text-sm">
-                      VSC Export & Import
-                    </p>
-                  </Window>
+                  <CodeWindow
+                    code="VSC Export & Import"
+                    lang="txt"
+                    title="Prompt.txt"
+                  />
                 </div>
               </div>
               <p className="text-primary-white-300 text-pretty font-mono text-sm">
@@ -228,14 +228,11 @@ const Page = () => (
                   Enter the text in prompt and press <Kbd text="Enter ⏎" />
                 </p>
                 <div className="mt-3">
-                  <Window
+                  <CodeWindow
+                    code="Preferences: Open Settings (JSON)"
+                    lang="txt"
                     title="Prompt.txt"
-                    textToCopy="Preferences: Open Settings (JSON)"
-                  >
-                    <p className="text-primary-white-300 text-pretty font-mono text-sm">
-                      Preferences: Open Settings (JSON)
-                    </p>
-                  </Window>
+                  />
                 </div>
               </div>
               <div>
@@ -243,9 +240,10 @@ const Page = () => (
                   Copy the settings.json from the below window
                 </p>
                 <div className="mt-3">
-                  <Code
+                  <CodeWindow
+                    showLineNumbers
                     code={settingsJSON}
-                    language="json"
+                    lang="json"
                     title="settings.json"
                   />
                 </div>

@@ -17,13 +17,13 @@ const ProjectCard = ({
   imageUrl: string;
   displayLink: string;
 }) => (
-  <div className="duration-200 ease-in-out cursor-pointer p-6 border border-primary-white-50 rounded-xl hover:border-highlight flex flex-col ">
+  <div className="transition ease-in-out duration-200  cursor-pointer p-6 border border-primary-white-50 rounded-xl hover:border-primary-white-100 flex flex-col ">
     <div>
       <Image
         src={imageUrl}
-        width={35}
-        height={35}
-        className="rounded-sm w-auto h-auto"
+        width={36}
+        height={36}
+        className="rounded-sm w-9 h-9"
         alt="logo of project"
       />
     </div>
@@ -38,7 +38,7 @@ const ProjectCard = ({
       {techStack.map((tech) => (
         <li
           key={tech}
-          className="text-xs rounded-md bg-primary-black-link-hover px-2 py-1 font-medium text-primary-white-300"
+          className="text-xs rounded-full bg-primary-black-link-hover px-2 py-1 font-medium text-primary-white-300"
         >
           {tech}
         </li>
