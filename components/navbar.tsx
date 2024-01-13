@@ -26,6 +26,7 @@ const NavBar = () => (
         href="http://github.com/pranavp10/pranavp10.com"
         className="text-sm rounded-md px-3 py-1.5 hover:text-primary-white text-primary-white-300"
       >
+        <p className="sr-only">Github</p>
         <Icon name="social-github" className="w-5 h-5" />
       </a>
     </div>
