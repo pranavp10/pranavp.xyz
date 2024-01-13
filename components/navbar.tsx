@@ -21,7 +21,6 @@ const NavBar = () => (
           <NavLinkItem key={link} link={link} title={title} />
         ))}
       </div>
-
       <a
         href="http://github.com/pranavp10/pranavp10.com"
         className="text-sm rounded-md px-3 py-1.5 hover:text-primary-white text-primary-white-300"
