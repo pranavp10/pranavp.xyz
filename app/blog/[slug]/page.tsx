@@ -1,7 +1,18 @@
-import { getBlogDetails } from "@/utils/getBlogs";
+import { getBlogDetails, getBlogs } from "@/utils/getBlogs";
 import { notFound } from "next/navigation";
 import { PostBody } from "./components/PostBody";
 import Image from "next/image";
+
+export async function generateStaticParams() {
+  const posts = await getBlogs();
+
+  return posts.filter((post) => {
+    if (post)
+      return {
+        slug: post.slug,
+      };
+  });
+}
 
 const Page = async ({ params }: { params: { slug: string } }) => {
   const post = await getBlogDetails(params.slug);

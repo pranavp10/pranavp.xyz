@@ -1,12 +1,13 @@
 import BasicCard from "@/components/card/basicCard";
 import { BlogCard } from "@/components/card/blogCard";
 import ProjectCard from "@/components/card/projectCard";
-import { blogData } from "@/data/blogDate";
 import { projects } from "@/data/projectData";
 import { BlogType } from "@/types";
+import { getBlogs } from "@/utils/getBlogs";
 import Link from "next/link";
 
-const Home = () => {
+const Home = async () => {
+  const blogs = await getBlogs();
   return (
     <main className="max-w-2xl w-full m-auto   mt-16">
       <header>
@@ -60,9 +61,13 @@ const Home = () => {
         <div className="mt-16">
           <h2 className="text-xl">Blog</h2>
           <div className="mt-3 grid sm:grid-cols-2 gap-3">
-            {blogData.map((blogDetails: BlogType) => (
-              <BlogCard blogDetails={blogDetails} key={blogDetails?.slug} />
-            ))}
+            {blogs.map((blogDetails: BlogType | null) =>
+              blogDetails ? (
+                <BlogCard blogDetails={blogDetails} key={blogDetails?.slug} />
+              ) : (
+                <></>
+              )
+            )}
           </div>
           <div className="mt-3 flex justify-center">
             <Link

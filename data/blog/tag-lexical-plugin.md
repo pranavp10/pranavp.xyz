@@ -1,7 +1,7 @@
 ---
 title: "How to add mention functionality in lexical editor"
 description: "Test for blog."
-slug: "test"
+slug: "tag-lexical-plugin"
 date: "Jan 16, 2024"
 tags: ["Lexical", "React", "Editor"]
 imageName: "lexical"

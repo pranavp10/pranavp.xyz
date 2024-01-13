@@ -1,8 +1,10 @@
 import { BlogCard } from "@/components/card/blogCard";
-import { blogData } from "@/data/blogDate";
 import { BlogType } from "@/types";
+import { getBlogs } from "@/utils/getBlogs";
 
 const Page = async () => {
+  const blogs = await getBlogs();
+
   return (
     <main className="max-w-2xl w-full m-auto ">
       <header className="mt-16">
@@ -11,9 +13,13 @@ const Page = async () => {
           I write all my codding
         </p>
         <div className="mt-10 grid sm:grid-cols-2 gap-5">
-          {blogData.map((blogDetails: BlogType) => (
-            <BlogCard blogDetails={blogDetails} key={blogDetails?.slug} />
-          ))}
+          {blogs.map((blogDetails: BlogType | null) =>
+            blogDetails ? (
+              <BlogCard blogDetails={blogDetails} key={blogDetails?.slug} />
+            ) : (
+              <></>
+            )
+          )}
         </div>
       </header>
     </main>
