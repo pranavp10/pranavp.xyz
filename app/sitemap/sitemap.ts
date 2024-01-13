@@ -4,7 +4,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const WEBSITE_URL = process.env.PUBLIC_URL
 
     const siteLinks: SitemapFile[] = links.map((slug) => ({
-        url: `${WEBSITE_URL}/${slug}`,
+        url: `${WEBSITE_URL}${slug}`,
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.7,
