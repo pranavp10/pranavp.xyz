@@ -15,7 +15,7 @@ export const ExperienceCard = ({
 }) => {
   return (
     <div>
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         <p className="font-semibold">
           {company}{" "}
           <span className="bg-primary-white-100 font-normal py-[1px] text-xs ml-1 px-2 rounded-full border-primary-white-50 border">

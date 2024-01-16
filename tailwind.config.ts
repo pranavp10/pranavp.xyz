@@ -22,6 +22,10 @@ const config: Config = {
         'highlight': '#ff8000',
         'highlight-50': '#ff80001a',
         'highlight-100': '#ff80002a',
+        'primary-green': '#aaff00',
+        'primary-green-50': '#aaff001a',
+        'primary-green-100': '#aaff00a3',
+        'primary-green-300': '#aaff00a5',
         'cream-800': '#CE9178FF'
       }
     },

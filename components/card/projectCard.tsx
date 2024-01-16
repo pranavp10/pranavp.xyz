@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Icon from "../icon/icon";
 
 const ProjectCard = ({
   link,
@@ -18,7 +19,7 @@ const ProjectCard = ({
   displayLink: string;
 }) => (
   <div className="transition ease-in-out duration-200  cursor-pointer p-6 border border-primary-white-50 rounded-xl hover:border-primary-white-100 flex flex-col ">
-    <div>
+    <div className="flex justify-between items-center">
       <Image
         src={imageUrl}
         width={36}
@@ -29,7 +30,10 @@ const ProjectCard = ({
     </div>
     <div>
       <p className="font-medium mt-4">{title}</p>
-      <p className="text-xs text-primary-white-300">{displayLink}</p>
+      <a className="text-xs text-primary-white-300 flex items-center hover:text-highlight gap-1">
+        {displayLink}
+        <Icon name="social-link" className="w-1.5 h-1.5" />
+      </a>
     </div>
     <p className="text-primary-white-300 text-pretty font-mono text-sm mt-4">
       {description}

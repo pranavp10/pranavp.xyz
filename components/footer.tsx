@@ -26,7 +26,7 @@ export const Footer = () => {
           </p>
         </div>
       </div>
-      <ul className="flex gap-6 items-center text-primary-white-300 mt-16">
+      <ul className="flex gap-3 sm:gap-6 items-center text-primary-white-300 mt-16">
         {contact.social.map((social) => (
           <li
             key={social.name}

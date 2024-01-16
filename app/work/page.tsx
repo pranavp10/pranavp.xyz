@@ -70,7 +70,7 @@ const Page = () => {
         </div>
         <div className="mt-8">
           <h3 className="text-xl font-bold">Skills</h3>
-          <div className="mt-3 flex gap-1">
+          <div className="mt-3 flex gap-2 flex-wrap">
             {skills.map((skill) => (
               <p
                 key={skill}
