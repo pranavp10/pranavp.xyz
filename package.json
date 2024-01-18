@@ -11,6 +11,7 @@
   "dependencies": {
     "@types/mdx": "^2.0.10",
     "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights": "^1.0.4",
     "bright": "^0.8.4",
     "gray-matter": "^4.0.3",
     "next": "14.0.4",
