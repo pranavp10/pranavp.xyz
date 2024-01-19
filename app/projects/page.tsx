@@ -1,6 +1,5 @@
 import ProjectCard from "@/components/card/projectCard";
 import { projects } from "@/data/projectData";
-import Link from "next/link";
 
 const Page = () => {
   return (

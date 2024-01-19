@@ -6,7 +6,7 @@ const IconTitleCard: FC<{
   experience?: string;
 }> = ({ icon, title }) => (
   <div className="border-primary-white-50">
-    <div className="flex gap-3 items-center">
+    <div className="flex gap-6 items-center">
       {icon}
       <p className="font-mono text-sm text-pretty">{title}</p>
     </div>
