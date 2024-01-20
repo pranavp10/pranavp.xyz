@@ -11,7 +11,6 @@ function TitleBarContent(props: BrightProps): JSX.Element {
   const { title, code } = props;
   const { svg, color } = getDarkIcon(title || "");
   const __html = svg.replace(/svg/, `svg fill='${color}'`);
-
   return (
     <div className="flex justify-between items-center border-b border-primary-white-50 px-4 py-2 rounded-t-lg w-full">
       <div className="flex gap-0.5 items-center">

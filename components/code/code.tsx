@@ -21,7 +21,7 @@ export const CodeWindow = ({
       lineNumbers={showLineNumbers}
       theme={themeData}
       title={title}
-      className="border border-primary-white-50 rounded-md text-sm font-medium leading-[1.8] code"
+      className="border border-primary-white-50 rounded-md text-sm font-medium leading-[1.8] code !m-0"
     />
   );
 };
