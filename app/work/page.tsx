@@ -1,12 +1,38 @@
 import { ExperienceCard } from "@/components/card/experienceCard";
 import Icon from "@/components/icon/icon";
 import { RESUME_DATA } from "@/data/resumeData";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+const { name, about, avatarUrl, contact, summary, work, skills, education } =
+  RESUME_DATA;
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/work",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
+  title: "Resume | Pranav Patel",
+  description: about,
+  keywords: [...skills],
+  robots: "index, follow",
+  openGraph: {
+    title: "Resume | Pranav Patel",
+    description: about,
+    url: `${process.env.PUBLIC_URL}/work`,
+    type: "website",
+    siteName: " Resume | Pranav P",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ThatsPranav",
+    creator: "@ThatsPranav",
+  },
+};
 
 const Page = () => {
-  const { name, about, avatarUrl, contact, summary, work, skills, education } =
-    RESUME_DATA;
   return (
     <main className="max-w-2xl w-full m-auto ">
       <div className="flex mt-16 gap-5 items-center">
