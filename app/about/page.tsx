@@ -1,3 +1,32 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/about",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
+  title: "About Pranav Patel",
+  description:
+    "Hey, I'm Pranav, a passionate software engineer with a love for gadgets and design.",
+  keywords: ["Laptop", "JavaScript", "React", "UI/UX", "Portfolio", "Gears"],
+  robots: "index, follow",
+  openGraph: {
+    title: "About Pranav Patel",
+    description:
+      "Hey, I'm Pranav, a passionate software engineer with a love for gadgets and design.",
+    url: `${process.env.PUBLIC_URL}/gears`,
+    type: "website",
+    siteName: "About | Pranav P",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ThatsPranav",
+    creator: "@ThatsPranav",
+  },
+};
+
 const Page = () => {
   return (
     <main className="max-w-2xl w-full m-auto ">
