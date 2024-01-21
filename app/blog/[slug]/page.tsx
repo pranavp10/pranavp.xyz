@@ -3,6 +3,57 @@ import { notFound } from "next/navigation";
 import { PostBody } from "./components/PostBody";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) {
+  try {
+    const posts = await getBlogs();
+
+    const post = posts.find((post) => post?.slug === slug);
+    if (post) {
+      const metadata: Metadata = {
+        alternates: {
+          canonical: `/blog/${slug}`,
+          languages: {
+            "en-US": "/en-US",
+          },
+        },
+        title: post.title,
+        description: post.description,
+        keywords: ["Blog", ...post.tags],
+        robots: "index, follow",
+        openGraph: {
+          title: post.title,
+          description: post.description,
+          url: `${process.env.PUBLIC_URL}/blog/${slug}`,
+          type: "website",
+          siteName: "Blog | Pranav",
+          images: [{ url: `${process.env.PUBLIC_URL}/${post.imageName}.png` }],
+        },
+        twitter: {
+          card: "summary_large_image",
+          site: "@ThatsPranav",
+          creator: "@ThatsPranav",
+        },
+      };
+      return metadata;
+    } else {
+      return {
+        title: "Not found",
+        description: "The page you are looking  for does not exits.",
+      };
+    }
+  } catch (e) {
+    return {
+      title: "Not found",
+      description: "The page you are looking  for does not exits.",
+    };
+  }
+}
 
 export async function generateStaticParams() {
   const posts = await getBlogs();

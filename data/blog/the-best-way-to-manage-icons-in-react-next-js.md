@@ -1,6 +1,6 @@
 ---
 title: "The best way to manage icons in React/Nextjs"
-description: "How to add icons to large projects to the next js and react js"
+description: "How to remove icons from JavaScript bundles without losing the flexibility of inline SVG"
 slug: "the-best-way-to-manage-icons-in-react-js"
 date: "Jan 20, 2024"
 tags: ["SVG", "React", "Sprite"]
