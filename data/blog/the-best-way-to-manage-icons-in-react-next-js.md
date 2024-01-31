@@ -97,7 +97,7 @@ const App = () => (
 
 - Build a Sprites.svg file and preload it using html
 
-```html
+```Sprites.svg
 <!-- sprites.svg -->
 <svg xmlns="http://www.w3.org/2000/svg">
   <defs>

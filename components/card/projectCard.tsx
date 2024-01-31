@@ -18,36 +18,44 @@ const ProjectCard = ({
   imageUrl: string;
   displayLink: string;
 }) => (
-  <div className="transition ease-in-out duration-200  cursor-pointer p-6 border border-primary-white-50 rounded-xl hover:border-primary-white-100 flex flex-col ">
-    <div className="flex justify-between items-center">
-      <Image
-        src={imageUrl}
-        width={36}
-        height={36}
-        className="rounded-sm w-9 h-9"
-        alt="logo of project"
-      />
+  <div className="transition ease-in-out duration-200  cursor-pointer p-6 border border-primary-white-50 rounded-xl hover:border-primary-white-100 flex flex-col">
+    <div className="group relative">
+      <a target="_blank" href={link} className="absolute inset-0" />
+
+      <div className="flex gap-4 items-center relative ">
+        <Image
+          src={imageUrl}
+          width={36}
+          height={36}
+          className="rounded-sm w-9 h-9"
+          alt="logo of project"
+        />
+        <div>
+          <p className="font-medium">{title}</p>
+          <a
+            target="_blank"
+            href={link}
+            className="text-xs text-primary-white-300 flex items-center group-hover:text-highlight gap-1"
+          >
+            {displayLink}
+            <Icon name="social-link" className="w-1.5 h-1.5" />
+          </a>
+        </div>
+      </div>
+      <p className="text-primary-white-300 text-pretty font-mono text-sm mt-4">
+        {description}
+      </p>
+      <ul className="flex items-center gap-2 flex-wrap mt-3">
+        {techStack.map((tech) => (
+          <li
+            key={tech}
+            className="text-xs rounded-full bg-primary-black-link-hover px-2 py-1 font-medium text-primary-white-300"
+          >
+            {tech}
+          </li>
+        ))}
+      </ul>
     </div>
-    <div>
-      <p className="font-medium mt-4">{title}</p>
-      <a className="text-xs text-primary-white-300 flex items-center hover:text-highlight gap-1">
-        {displayLink}
-        <Icon name="social-link" className="w-1.5 h-1.5" />
-      </a>
-    </div>
-    <p className="text-primary-white-300 text-pretty font-mono text-sm mt-4">
-      {description}
-    </p>
-    <ul className="flex items-center gap-2 flex-wrap mt-3">
-      {techStack.map((tech) => (
-        <li
-          key={tech}
-          className="text-xs rounded-full bg-primary-black-link-hover px-2 py-1 font-medium text-primary-white-300"
-        >
-          {tech}
-        </li>
-      ))}
-    </ul>
     <div className="flex items-center gap-3 mt-6 ">
       <a
         href={link}
