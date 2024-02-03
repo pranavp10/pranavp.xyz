@@ -47,6 +47,8 @@ When constructing a UI, the significance of SVG cannot be overstated. As the cod
 
 ## The ultimate and most effective method for SVG usage is through the use of sprites.
 
+### Rendering Sprite as a react component
+
 1.  Creating a reusable "Icon" component for rendering SVG icons.
 
     ```Icon.tsx
@@ -67,58 +69,75 @@ When constructing a UI, the significance of SVG cannot be overstated. As the cod
 
 2.  Developing a "Sprite" component to handle all SVG icons.
 
-```SVGSprite.tsx
-const SVGSprite = () => (
-<svg xmlns="http://www.w3.org/2000/svg">
-    <defs>
-    <symbol id="plus" viewBox="0 0 24 24">
-        <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z"></path>
-    </symbol>
-    <symbol id="heart" viewBox="0 0 24 24">
-        <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z"></path>
-    </symbol>
-    </defs>
-</svg>
-);
-```
+    ```SVGSprite.tsx
+    const SVGSprite = () => (
+      <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+          <symbol id="plus" viewBox="0 0 24 24">
+              <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z"></path>
+          </symbol>
+          <symbol id="heart" viewBox="0 0 24 24">
+              <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z"></path>
+          </symbol>
+          </defs>
+      </svg>
+    );
+    ```
 
-3. How to use it
+3.  Render the SpriteSvg in the App component
 
-```App.tsx
-import SpriteSvg from "@/SpriteSvg";
+    ```App.tsx
+    import SpriteSvg from "@/SpriteSvg";
 
-const App = () => (
-  <div>
-    // remaining code
-    <SpriteSvg />
-  </div>
-);
-```
+    const App = () => (
+      <div>
+        // remaining code
+        <SpriteSvg />
+      </div>
+    );
+    ```
 
-- Build a Sprites.svg file and preload it using html
+4.  How to use it
 
-```Sprites.svg
-<!-- sprites.svg -->
-<svg xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <symbol id="plus" viewBox="0 0 24 24">
-      <path
-        d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z"
-      ></path>
-    </symbol>
-    <symbol id="heart" viewBox="0 0 24 24">
-      <path
-        d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z"
-      ></path>
-    </symbol>
-  </defs>
-</svg>
-```
+    ```Component.tsx
+    import Icon from "@/Icon";
 
-- Preload the sprite.svg file mentioned above.
+    const App = () => (
+      <div>
+        <Icon name="plus" />
+      </div>
+    );
+    ```
 
-```html
-<head>
-  <link rel="preload" as="image/svg+xml" href="sprite.svg" />
-</head>
-```
+### How to handel large Sprites in large Projects
+
+1. Create an SVG file for sprites and place it within the public folder.
+
+   ```html
+   <!-- sprites.svg -->
+   <svg xmlns="http://www.w3.org/2000/svg">
+     <defs>
+       <symbol id="plus" viewBox="0 0 24 24">
+         <path
+           d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z"
+         ></path>
+       </symbol>
+       <symbol id="heart" viewBox="0 0 24 24">
+         <path
+           d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z"
+         ></path>
+       </symbol>
+     </defs>
+   </svg>
+   ```
+
+2. Preload the mentioned sprite.svg file by adding the following line to your index.html.
+
+   ```html
+   <head>
+     // remaining code
+     <link rel="preload" as="image/svg+xml" href="/sprite.svg" />
+   </head>
+   ```
+
+3. Utilize the previously constructed Icon.tsx component by passing the respective name to it.

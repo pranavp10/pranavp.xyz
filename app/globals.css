@@ -36,16 +36,16 @@
   @apply text-primary-white-300 text-pretty;
 }
 .blog h1 {
-  @apply text-primary-white text-lg font-medium text-pretty;
+  @apply text-primary-white text-lg font-medium text-pretty mt-6;
 }
 .blog h2 {
-  @apply text-primary-white text-lg font-medium text-pretty;
+  @apply text-primary-white text-lg font-medium text-pretty mt-6;
 }
 .blog h3 {
-  @apply text-primary-white text-lg font-medium text-pretty;
+  @apply text-primary-white text-lg font-medium text-pretty mt-6;
 }
 .blog h4 {
-  @apply text-primary-white text-lg font-medium text-pretty;
+  @apply text-primary-white text-lg font-medium text-pretty mt-6;
 }
 .blog h5 {
   @apply text-primary-white text-lg font-medium text-pretty;
