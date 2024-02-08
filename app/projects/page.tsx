@@ -5,8 +5,8 @@ const Page = () => {
   return (
     <main className="max-w-2xl w-full m-auto ">
       <header className="mt-16">
-        <h1 className="text-xl">Projects</h1>
-        <p className="mt-6 text-primary-white-300 text-pretty font-mono text-sm">
+        <h1 className="text-xl font-medium">Projects</h1>
+        <p className="mt-6 dark:text-dark-white-300 text-pretty font-mono text-sm text-zinc-500">
           I&apos;ve been developing SaaS products for quite some time, and the
           majority of them are available as open-source. Here is a compilation
           of the projects.

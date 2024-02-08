@@ -36,13 +36,13 @@ export const metadata: Metadata = {
 const Page = () => (
   <main className="max-w-2xl w-full m-auto ">
     <header className="mt-16">
-      <h1 className="text-xl">Gears Used </h1>
-      <p className="mt-3 text-primary-white-300 text-pretty font-mono text-sm">
+      <h1 className="text-xl font-medium">Gears Used </h1>
+      <p className="mt-3 text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
         Productivity tools, explore the tech that keeps my workflow seamless and
         efficient.
       </p>
       <div className="pt-14">
-        <h2 className="mb-3">Devices</h2>
+        <h2 className="mb-3 font-medium">Devices</h2>
         <div className="flex flex-col gap-5">
           {gears.map((gear) => (
             <IconTitleCard
@@ -59,7 +59,7 @@ const Page = () => (
           ))}
         </div>
         <div className="pt-14">
-          <h2 className="mb-6">Software and Apps</h2>
+          <h2 className="mb-6 font-medium">Software and Apps</h2>
           <IconTitleCard
             icon={
               <Icon
@@ -181,6 +181,6 @@ const Page = () => (
   </main>
 );
 
-const iconClassName = `border border-primary-white-50 w-9 h-9 p-2 bg-primary-white-50 rounded-md`;
+const iconClassName = `border dark:border-dark-white-50 w-9 h-9 p-2 bg-dark-white-50 rounded-md`;
 
 export default Page;

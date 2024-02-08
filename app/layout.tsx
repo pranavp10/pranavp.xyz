@@ -4,8 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/navbar";
 import { IconsSprite } from "../components/icon/iconsSprite";
 import { Footer } from "@/components/footer";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -57,23 +56,27 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  ...props
 }: {
   children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body
-        className={`text-primary-white bg-primary-black ${inter.className}`}
+        className={`text-primary-black bg-white transition-colors duration-1000 dark:text-dark-white-900 dark:bg-primary-black  ${inter.className}`}
       >
-        <div className="px-4 py-2">
-          <NavBar />
-          {children}
-          <Footer />
-          <IconsSprite />
-        </div>
-        <Analytics />
-        <SpeedInsights />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="px-4 py-2">
+            <NavBar />
+            {children}
+            <Footer />
+            <IconsSprite />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

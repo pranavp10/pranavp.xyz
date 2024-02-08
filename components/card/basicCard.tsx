@@ -14,14 +14,14 @@ const BasicCard = ({
 }) => (
   <Link
     href={link}
-    className="p-3 border border-primary-white-50 rounded-xl w-full relative hover:bg-primary-white-50 transition duration-200 ease-in-out flex items-center gap-3"
+    className="p-3 border dark:border-dark-white-50 rounded-xl w-full relative dark:hover:bg-dark-white-50 transition duration-200 ease-in-out flex items-center gap-3 hover:bg-zinc-100"
   >
-    <div className="h-12 w-12 bg-primary-white-50 rounded-md flex justify-center items-center flex-shrink-0">
+    <div className="h-12 w-12 dark:bg-dark-white-50 rounded-md flex justify-center items-center flex-shrink-0">
       <Icon name={iconName} className="w-6 h-6" gradientName="gradient" />
     </div>
     <div>
       <p className="text-sm text-pretty">{title}</p>
-      <p className="text-sm text-primary-white-300 text-pretty">
+      <p className="text-sm text-zinc-500 dark:text-dark-white-300 text-pretty">
         {description}
       </p>
     </div>

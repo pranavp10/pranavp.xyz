@@ -16,14 +16,14 @@ const NavBar = () => (
         />
       </Link>
 
-      <div className="flex items-center gap-1 border border-primary-white-100 rounded-full pt-1 pb-1.5 px-1.5 bg-primary-black">
+      <div className="flex items-center gap-1 border dark:border-dark-white-100 rounded-full pt-1 pb-1.5 px-1.5 bg-white dark:bg-primary-black border-zinc-200">
         {links.map(({ link, title }) => (
           <NavLinkItem key={link} link={link} title={title} />
         ))}
       </div>
       <a
         href="http://github.com/pranavp10/pranavp10.com"
-        className="text-sm rounded-md px-3 py-1.5 hover:text-primary-white text-primary-white-300"
+        className="text-sm rounded-md px-3 py-1.5 dark:hover:text-dark-white-900 text-zinc-600 hover:text-zinc-900 dark:text-dark-white-300"
       >
         <p className="sr-only">Github</p>
         <Icon name="social-github" className="w-5 h-5" />

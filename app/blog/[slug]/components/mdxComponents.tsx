@@ -10,7 +10,7 @@ export const mdxComponents: MDXComponents = {
       {...props}
       extensions={[titleBar]}
       theme={themeData}
-      className="border border-primary-white-50 rounded-xl text-sm font-medium leading-[1.8] code"
+      className="border border-dark-white-50 rounded-xl text-sm font-medium leading-[1.8] code"
     />
   ),
   Info,

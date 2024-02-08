@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className="max-w-2xl w-full m-auto mt-16 mb-24">
       <Quote />
-      <ul className="flex gap-3 sm:gap-6 items-center text-primary-white-300 mt-16">
+      <ul className="flex gap-3 sm:gap-6 items-center text-zinc-500 dark:text-dark-white-300 mt-16">
         {contact.social.map((social) => (
           <li
             key={social.name}

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <main className="max-w-2xl w-full m-auto ">
-      <header className="mt-16 flex flex-col text-pretty font-mono gap-6 text-primary-white-300">
+      <header className="mt-16 flex flex-col text-pretty font-mono gap-6 text-zinc-500 dark:text-dark-white-300">
         <h1>
           Hey, I&apos;m Pranav, a passionate software engineer with a love for
           gadgets and design. I vividly recall the excitement when smartphones

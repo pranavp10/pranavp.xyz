@@ -38,7 +38,7 @@ const Page = () => {
       <div className="flex mt-16 gap-5 items-center">
         <header>
           <h1 className="text-2xl font-bold">{name}</h1>
-          <p className="mt-2.5 text-primary-white-300 text-pretty font-mono text-sm">
+          <p className="mt-2.5 text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
             {about}
           </p>
           <div className="flex gap-1.5 mt-3">
@@ -48,7 +48,7 @@ const Page = () => {
                 rel="rel"
                 href={url}
                 key={url}
-                className="text-primary-white-300 border-primary-white-100 rounded-md hover:bg-primary-white-100 border p-1.5 hover:text-primary-white"
+                className="text-zinc-500 dark:text-dark-white-300 dark:border-dark-white-100 rounded-md hover:bg-dark-white-100 border p-1.5 dark:hover:text-dark-white-900 hover:bg-zinc-100 hover:text-black"
               >
                 {icon}
               </a>
@@ -58,7 +58,7 @@ const Page = () => {
         <Image src={avatarUrl} width={212} height={122} alt="logo of user" />
       </div>
       <h2 className="text-xl mt-8 font-bold">About</h2>
-      <p className="text-primary-white-300 text-pretty font-mono text-sm mt-3">
+      <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm mt-3">
         {summary}
       </p>
       <div className="mt-8">
@@ -83,11 +83,11 @@ const Page = () => {
               <div key={ed.end}>
                 <div className="flex justify-between items-center">
                   <p className="font-semibold">{ed.school}</p>
-                  <p className="text-primary-white-300 text-sm">
+                  <p className="text-zinc-500 dark:text-dark-white-300 text-sm">
                     {ed.start} - {ed.end}
                   </p>
                 </div>
-                <p className="text-primary-white-300 tracking-wider font-mono text-sm mt-1.5 text-pretty">
+                <p className="text-zinc-500 dark:text-dark-white-300 tracking-wider font-mono text-sm mt-1.5 text-pretty">
                   {ed.degree}
                 </p>
               </div>
@@ -100,7 +100,7 @@ const Page = () => {
             {skills.map((skill) => (
               <p
                 key={skill}
-                className="bg-primary-white-100 font-normal py-0.5 text-xs px-2 rounded-full border-primary-white-50 border"
+                className="dark:bg-dark-white-100 py-0.5 text-xs px-3 rounded-full dark:border-dark-white-50 border font-medium bg-zinc-50"
               >
                 {skill}
               </p>
@@ -108,7 +108,7 @@ const Page = () => {
 
             <Link
               href="/skills"
-              className="transition ease-in-out duration-300 bg-primary-white-100 hover:bg-highlight-100 hover:border-highlight hover:text-highlight font-normal py-0.5 text-xs px-2 rounded-full border-primary-white-50 border flex gap-1 items-center group"
+              className="transition ease-in-out duration-300 dark:bg-dark-white-100 hover:bg-highlight-100 hover:border-highlight hover:text-highlight font-medium py-0.5 text-xs px-3 rounded-full dark:border-dark-white-50 border flex gap-1 items-center group bg-zinc-50"
             >
               See all{" "}
               <Icon

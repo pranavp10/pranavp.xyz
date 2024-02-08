@@ -76,14 +76,14 @@ const Page = async ({ params }: { params: { slug: string } }) => {
           <ul className="flex items-center gap-2 flex-wrap">
             {post.tags.map((tag) => (
               <li key={tag}>
-                <p className="text-primary-white-300 bg-primary-black-link-hover text-pretty text-xs font-mono px-1.5 py-0.5 rounded-full border border-primary-white-50">
+                <p className="text-dark-white-300 bg-primary-black-link-hover text-pretty text-xs font-mono px-1.5 py-0.5 rounded-full border border-dark-white-50">
                   {tag}
                 </p>
               </li>
             ))}
           </ul>
           <div className="">
-            <time className="text-primary-white-300 text-pretty text-xs font-mono">
+            <time className="text-dark-white-300 text-pretty text-xs font-mono">
               {post.date}
             </time>
           </div>
@@ -103,7 +103,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
       <div className="pt-4">
         <Link
           href="/blog"
-          className="text-primary-white-300 bg-primary-black-link-hover text-pretty text-xs font-mono px-4 py-1 rounded-full border border-primary-white-50 hover:text-highlight hover:border-highlight transition duration-300 ease-in-out"
+          className="text-dark-white-300 bg-primary-black-link-hover text-pretty text-xs font-mono px-4 py-1 rounded-full border border-dark-white-50 hover:text-highlight hover:border-highlight transition duration-300 ease-in-out"
         >
           &larr; All Posts
         </Link>

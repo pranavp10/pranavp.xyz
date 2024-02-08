@@ -3,7 +3,6 @@ import NumberList from "@/components/numberList";
 import IconTitleCard from "../gears/components/iconsTitleCars";
 import Kbd from "@/components/kbd";
 import { Metadata } from "next";
-import { titleBar } from "@/components/code/tabContainer";
 import { CodeWindow } from "@/components/code/code";
 
 export const metadata: Metadata = {
@@ -40,12 +39,12 @@ export const metadata: Metadata = {
 const Page = () => (
   <main className="max-w-2xl w-full m-auto ">
     <header className="mt-16">
-      <h1 className="text-xl">VS Code Setup</h1>
-      <p className="mt-3 text-primary-white-300 text-pretty font-mono text-sm">
+      <h1 className="text-xl font-medium">VS Code Setup</h1>
+      <p className="mt-3 text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
         The VS Code settings I use every day for coding.
       </p>
       <div className="pt-14">
-        <h2 className="mb-3">Step 1</h2>
+        <h2 className="mb-3 font-medium">Step 1</h2>
         <IconTitleCard
           icon={
             <Icon
@@ -61,7 +60,7 @@ const Page = () => (
             <a
               href="/download/operator-mono.zip"
               download
-              className="flex items-center justify-center gap-2 text-primary-white-300 px-4 rounded-lg py-2 font-medium border border-primary-white-50 text-center hover:bg-primary-white-50 font-mono hover:text-primary-white group transition duration-300 ease-in-out"
+              className="flex items-center justify-center gap-2 text-zinc-500 dark:text-dark-white-300 px-4 rounded-lg py-1.5 font-medium border dark:border-dark-white-50 text-center dark:hover:bg-dark-white-50 font-mono dark:hover:text-dark-white group transition duration-300 ease-in-out hover:bg-zinc-100 hover:text-zinc-700"
             >
               operator-mono.zip{" "}
               <svg
@@ -79,10 +78,10 @@ const Page = () => (
               </svg>
             </a>
             <NumberList>
-              <p className="text-primary-white-300 text-pretty font-mono text-sm">
+              <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
                 Unzip the font&apos;s file
               </p>
-              <p className="text-primary-white-300 text-pretty font-mono text-sm">
+              <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
                 Select all the fonts, right click, and click to Install
               </p>
             </NumberList>
@@ -91,7 +90,7 @@ const Page = () => (
             <a
               href="/download/vsc-extensions.txt"
               download
-              className="flex items-center justify-center gap-2 text-primary-white-300 px-4 rounded-lg py-2 font-medium border border-primary-white-50 text-center hover:bg-primary-white-50 font-mono hover:text-primary-white group transition duration-300 ease-in-out"
+              className="flex items-center justify-center gap-2 text-zinc-500 dark:text-dark-white-300 px-4 rounded-lg py-1.5 font-medium border dark:border-dark-white-50 text-center dark:hover:bg-dark-white-50 font-mono dark:hover:text-dark-white group transition duration-300 ease-in-out hover:bg-zinc-100 hover:text-zinc-700"
             >
               vsc-extensions.txt{" "}
               <svg
@@ -109,15 +108,15 @@ const Page = () => (
               </svg>
             </a>
             <NumberList>
-              <p className="text-primary-white-300 text-pretty font-mono text-sm ">
+              <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm ">
                 Place this file in{` `}
                 <b>downloads</b>
               </p>
-              <p className="text-primary-white-300 text-pretty font-mono text-sm">
+              <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
                 Open the vscode in{` `}
                 <b>downloads directory</b>
               </p>
-              <div className="text-primary-white-300 text-pretty font-mono text-sm">
+              <div className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
                 Install{` `}
                 <a
                   href="https://marketplace.visualstudio.com/items?itemName=aslamanver.vsc-export"
@@ -146,7 +145,7 @@ const Page = () => (
           </div>
         </div>
         <div className="pt-14">
-          <h2 className="mb-3">Step 2</h2>
+          <h2 className="mb-3 font-medium">Step 2</h2>
           <IconTitleCard
             icon={
               <Icon
@@ -160,11 +159,11 @@ const Page = () => (
           <div className="ml-[6.5px]">
             <NumberList>
               <div className="flex gap-2 flex-col">
-                <p className="text-primary-white-300 text-pretty font-mono text-sm">
+                <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
                   Open Prompt by press the{" "}
-                  <b className="text-primary-white">cmd</b> +{" "}
-                  <b className="text-primary-white">shift</b> +{" "}
-                  <b className="text-primary-white">p</b> key
+                  <b className="text-dark-white">cmd</b> +{" "}
+                  <b className="text-dark-white">shift</b> +{" "}
+                  <b className="text-dark-white">p</b> key
                   <br />
                 </p>
                 <div>
@@ -176,7 +175,7 @@ const Page = () => (
                 </div>
               </div>
               <div>
-                <p className="text-primary-white-300 text-pretty font-mono text-sm">
+                <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
                   Enter the text in prompt and press <Kbd text="Enter ⏎" />
                 </p>
                 <div className="mt-3">
@@ -187,14 +186,14 @@ const Page = () => (
                   />
                 </div>
               </div>
-              <p className="text-primary-white-300 text-pretty font-mono text-sm">
+              <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
                 All extension will start to install
               </p>
             </NumberList>
           </div>
         </div>
         <div className="pt-14">
-          <h2 className="mb-3">Step 3</h2>
+          <h2 className="mb-3 font-medium">Step 3</h2>
           <IconTitleCard
             icon={
               <Icon
@@ -208,11 +207,11 @@ const Page = () => (
           <div className="ml-[6.5px]">
             <NumberList>
               <div className="flex gap-2 flex-col">
-                <p className="text-primary-white-300 text-pretty font-mono text-sm">
+                <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
                   Open Prompt by press the{" "}
-                  <b className="text-primary-white">cmd</b> +{" "}
-                  <b className="text-primary-white">shift</b> +{" "}
-                  <b className="text-primary-white">p</b> key
+                  <b className="text-dark-white">cmd</b> +{" "}
+                  <b className="text-dark-white">shift</b> +{" "}
+                  <b className="text-dark-white">p</b> key
                   <br />
                 </p>
                 <div>
@@ -224,7 +223,7 @@ const Page = () => (
                 </div>
               </div>
               <div>
-                <p className="text-primary-white-300 text-pretty font-mono text-sm">
+                <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
                   Enter the text in prompt and press <Kbd text="Enter ⏎" />
                 </p>
                 <div className="mt-3">
@@ -236,7 +235,7 @@ const Page = () => (
                 </div>
               </div>
               <div>
-                <p className="text-primary-white-300 text-pretty font-mono text-sm">
+                <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
                   Copy the settings.json from the below window
                 </p>
                 <div className="mt-3">
@@ -249,16 +248,16 @@ const Page = () => (
                 </div>
               </div>
 
-              <p className="text-primary-white-300 text-pretty font-mono text-sm">
+              <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
                 Past the code in the settings.json file in vs code
               </p>
-              <p className="text-primary-white-300 text-pretty font-mono text-sm">
+              <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
                 Save the <b>setting.json</b> file{`  `}
                 <Kbd text="⌘" /> + <Kbd text="s" />
                 {`  `}
                 and restart the vscode.
               </p>
-              <p className="text-primary-white-300 text-pretty font-mono text-sm">
+              <p className="text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
                 Done! 🚀
               </p>
             </NumberList>
@@ -269,7 +268,7 @@ const Page = () => (
   </main>
 );
 
-const iconClassName = `border border-primary-white-50 w-9 h-9 p-2 bg-primary-white-50 rounded-md`;
+const iconClassName = `border border-dark-white-50 w-9 h-9 p-2 bg-dark-white-50 rounded-md`;
 
 export default Page;
 

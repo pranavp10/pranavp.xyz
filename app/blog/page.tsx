@@ -8,8 +8,8 @@ const Page = async () => {
   return (
     <main className="max-w-2xl w-full m-auto ">
       <header className="mt-16">
-        <h1 className="text-xl">Blog</h1>
-        <p className="mt-6 text-primary-white-300 text-pretty font-mono text-sm">
+        <h1 className="text-xl font-medium">Blog</h1>
+        <p className="mt-6 text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
           I love writing blogs it&apos;s mostly about tech, success and
           sprituality but mostly tech and it&apos;s always about the common
           problem that we face duing software engineering how to face failer and

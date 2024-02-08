@@ -32,7 +32,7 @@ const NumberList: FC<{ lists?: string[]; children?: ReactNode[] }> = ({
             return (
               <li
                 key={index}
-                className={`relative pl-[52px] before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.200rem+1px)] before:h-[calc(1.200rem+1px)] before:text-[0.625rem] before:text-primary-white-300 before:rounded-[4px] before:bg-primary-white-50 before:ring-1 before:ring-primary-white-100
+                className={`relative pl-[52px] before:content-[counter(step)] before:absolute before:left-0 before:flex before:items-center before:justify-center before:w-[calc(1.200rem+1px)] before:h-[calc(1.200rem+1px)] before:text-[0.625rem] before:text-zinc-500 dark:before:text-dark-white-300 before:rounded-[4px] before:bg-zinc-100  dark:before:bg-dark-white-50 before:ring-1 dark:before:ring-dark-white-100 before:ring-zinc-200
           ${
             index !== children.length - 1 &&
             `pb-3 after:absolute after:top-[calc(1.530rem+1px)] after:-bottom-[calc(0.1rem+1px)] after:left-[0.55rem] after:w-[3px] after:bg-zinc-100 after:rounded-full dark:after:bg-zinc-900`

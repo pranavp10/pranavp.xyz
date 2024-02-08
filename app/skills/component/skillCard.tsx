@@ -13,10 +13,10 @@ const SkillCard: FC<{
     <a
       href={website || githubLink}
       target="_blank"
-      className="group p-3 border border-primary-white-50 rounded-xl w-full relative transition duration-300 ease-in-out flex items-center gap-3 justify-between hover:border-highlight"
+      className="group p-3 border dark:border-dark-white-50 rounded-xl w-full relative transition duration-300 ease-in-out flex items-center gap-3 justify-between hover:border-highlight"
     >
       <div className=" flex items-center gap-3">
-        <div className="space-x-4 h-12 w-12 bg-primary-white-50 rounded-md flex justify-center items-center flex-shrink-0">
+        <div className="space-x-4 h-12 w-12 bg-zinc-100 dark:bg-dark-white-50 rounded-md flex justify-center items-center flex-shrink-0">
           {path ? (
             <Image
               src={`/${path}`}
@@ -63,7 +63,7 @@ const SkillCard: FC<{
               ></path>
             </svg>
           </div>
-          <p className="text-xs text-pretty text-primary-white-300">
+          <p className="text-xs text-pretty text-zinc-500 dark:text-dark-white-300">
             {website ? linkExtractor(website) : githubExtractor(githubLink)}
           </p>
         </div>

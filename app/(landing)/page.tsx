@@ -11,10 +11,10 @@ const Home = async () => {
   return (
     <main className="max-w-2xl w-full m-auto mt-16">
       <header>
-        <h1 className="text-xl">
+        <h1 className="text-xl font-medium">
           Hello, I&apos;m Pranav Patel! <span className="wave">👋🏻</span>
         </h1>
-        <p className="mt-6 text-primary-white-300 text-pretty font-mono text-sm">
+        <p className="mt-6 text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
           A self-taught Software Engineer and Open Source Contributor, with a
           focus on JavaScript, React, and UI/UX design. Enthusiastic about
           crafting products from the ground up, driven by a keen eye for design.
@@ -28,13 +28,13 @@ const Home = async () => {
           </a>
           <a
             href="mailto:hi@pranavp10.com"
-            className="text-primary-white-300 bg-primary-black-link-hover px-4 rounded-lg py-1.5 text-sm font-medium hover:text-primary-white transition duration-300 ease-in-out"
+            className="dark:text-dark-white-300 dark:bg-primary-black-link-hover px-4 rounded-lg py-1.5 text-sm font-medium dark:hover:text-dark-white transition duration-300 ease-in-out bg-zinc-100 text-zinc-500 hover:text-zinc-900"
           >
             hi@pranavp10.com
           </a>
         </div>
         <div className="mt-16">
-          <h2 className="text-xl">Projects</h2>
+          <h2 className="text-xl font-medium">Projects</h2>
           <div className="mt-3 grid sm:grid-cols-2 gap-3">
             {projects.map((project) => (
               <ProjectCard
@@ -52,7 +52,7 @@ const Home = async () => {
           <div className="mt-3 flex justify-center">
             <Link
               href="/projects"
-              className="text-primary-white-300 px-4 rounded-lg py-2.5 text-sm font-medium hover:text-primary-white border border-primary-white-50 hover:bg-primary-black-link-hover  w-full text-center transition duration-300 ease-in-out"
+              className="dark:text-dark-white-300 px-4 rounded-lg py-2.5 text-sm font-medium dark:hover:text-dark-white border dark:border-dark-white-50 dark:hover:bg-primary-black-link-hover  w-full text-center transition duration-300 ease-in-out hover:bg-zinc-100 text-zinc-600"
             >
               Sell all
             </Link>
@@ -72,7 +72,7 @@ const Home = async () => {
           <div className="mt-3 flex justify-center">
             <Link
               href="/blog"
-              className="text-primary-white-300 px-4 rounded-lg py-2.5 text-sm font-medium hover:text-primary-white border border-primary-white-50 hover:bg-primary-black-link-hover  w-full text-center transition duration-300 ease-in-out"
+              className="dark:text-dark-white-300 px-4 rounded-lg py-2.5 text-sm font-medium dark:hover:text-dark-white border dark:border-dark-white-50 dark:hover:bg-primary-black-link-hover  w-full text-center transition duration-300 ease-in-out hover:bg-zinc-100 text-zinc-600"
             >
               Sell all
             </Link>
@@ -80,7 +80,7 @@ const Home = async () => {
         </div>
 
         <div className="mt-16">
-          <h2 className="text-xl">Experience</h2>
+          <h2 className="text-xl font-medium">Experience</h2>
           <div className="mt-3 flex flex-col gap-3">
             <BasicCard
               link="/skills"
@@ -91,7 +91,7 @@ const Home = async () => {
           </div>
         </div>
         <div className="mt-16">
-          <h2 className="text-xl">Development Setup</h2>
+          <h2 className="text-xl font-medium">Development Setup</h2>
           <div className="mt-3 flex flex-col gap-3">
             <BasicCard
               link="/gears"

@@ -12,14 +12,16 @@ export const CodeWindow = ({
   lang: string;
   title: string;
   showLineNumbers?: boolean;
-}) => (
-  <Code
-    extensions={[titleBar]}
-    code={code}
-    lang={lang}
-    lineNumbers={showLineNumbers}
-    theme={themeData}
-    title={title}
-    className="border border-primary-white-50 rounded-md text-sm font-medium leading-[1.8] code !m-0"
-  />
-);
+}) => {
+  return (
+    <Code
+      extensions={[titleBar]}
+      code={code}
+      lang={lang}
+      lineNumbers={showLineNumbers}
+      theme={themeData}
+      title={title}
+      className="border dark:border-dark-white-50 rounded-md text-sm font-medium leading-[1.8] code !m-0"
+    />
+  );
+};

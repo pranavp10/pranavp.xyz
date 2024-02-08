@@ -47,8 +47,8 @@ const Page = () => {
   return (
     <main className="max-w-2xl w-full m-auto ">
       <header className="mt-16">
-        <h1 className="text-xl">Skills & technology</h1>
-        <p className="mt-3 text-primary-white-300 text-pretty font-mono text-sm">
+        <h1 className="text-xl font-medium">Skills & technology</h1>
+        <p className="mt-3 text-zinc-500 dark:text-dark-white-300 text-pretty font-mono text-sm">
           Throughout my professional journey, I&apos;ve gained extensive
           technology expertise, honing skills in frameworks, languages, and
           methodologies. This hands-on experience not only deepened my software
@@ -60,7 +60,7 @@ const Page = () => {
         <div className="pt-14">
           {ListOfLibraries.map((item) => (
             <div key={item.title}>
-              <h2 className="ml-2" key={item.title}>
+              <h2 className="ml-2 font-medium" key={item.title}>
                 {item.title}
               </h2>
               <div className="mt-2 flex flex-col gap-3">

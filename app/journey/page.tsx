@@ -9,7 +9,7 @@ const Page = () => {
     <main className="max-w-2xl w-full m-auto ">
       <header className="mt-16">
         <h1 className="text-xl">Journey</h1>
-        <p className="mt-6 text-primary-white-300 text-pretty font-mono text-sm">
+        <p className="mt-6 text-dark-white-300 text-pretty font-mono text-sm">
           The path I&apos;ve taken so far on my journey to become a Software
           Engineer.
         </p>
@@ -17,7 +17,7 @@ const Page = () => {
           {journeyData.map((data, index) => (
             <div key={data.year} className="relative">
               {journeyData.length - 1 != index && (
-                <div className="border do absolute top-0 bottom-0 mt-14 ml-[105px] border-dashed border-primary-white-100" />
+                <div className="border do absolute top-0 bottom-0 mt-14 ml-[105px] border-dashed border-dark-white-100" />
               )}
               <div className="grid grid-cols-8 gap-12 items-center">
                 <p className={data?.sameYear ? "invisible" : ""}>{data.year}</p>
@@ -35,7 +35,7 @@ const Page = () => {
                 </div>
               </div>
               <div className="ml-36">
-                <p className="text-primary-white-300 font-mono text-[13px] tracking-wider text-pretty">
+                <p className="text-dark-white-300 font-mono text-[13px] tracking-wider text-pretty">
                   {data.description}
                 </p>
                 {data?.imageURl && (
@@ -61,6 +61,6 @@ const Page = () => {
   );
 };
 
-const iconClassName = `border border-primary-white-50 w-8 h-8 p-2 bg-primary-white-50 rounded-full`;
+const iconClassName = `border border-dark-white-50 w-8 h-8 p-2 bg-dark-white-50 rounded-full`;
 
 export default Page;
