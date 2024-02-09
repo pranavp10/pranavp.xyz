@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Icon from "./icon/icon";
-import NavLinkItem from "./navLinkItem";
+import NavBarLinkItem from "./navBarLinkItem";
 
 const NavBar = () => (
   <nav className="sticky top-4 z-10">
@@ -18,7 +18,7 @@ const NavBar = () => (
 
       <div className="flex items-center gap-1 border dark:border-dark-white-100 rounded-full pt-1 pb-1.5 px-1.5 bg-white dark:bg-primary-black border-zinc-200">
         {links.map(({ link, title }) => (
-          <NavLinkItem key={link} link={link} title={title} />
+          <NavBarLinkItem key={link} link={link} title={title} />
         ))}
       </div>
       <a

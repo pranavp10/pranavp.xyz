@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const NavLinkItem = ({ link, title }: { link: string; title: string }) => {
+const NavBarLinkItem = ({ link, title }: { link: string; title: string }) => {
   const pathname = usePathname();
 
   return (
@@ -25,4 +25,4 @@ const NavLinkItem = ({ link, title }: { link: string; title: string }) => {
   );
 };
 
-export default NavLinkItem;
+export default NavBarLinkItem;
