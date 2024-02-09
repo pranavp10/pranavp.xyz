@@ -12,13 +12,15 @@ function TitleBarContent(props: BrightProps): JSX.Element {
   const { svg, color } = getDarkIcon(title || "");
   const __html = svg.replace(/svg/, `svg fill='${color}'`);
   return (
-    <div className="flex justify-between items-center border-b border-dark-white-50 px-4 py-2 rounded-t-lg w-full">
+    <div className="flex justify-between items-center border-b dark:border-dark-white-50 px-4 py-2 rounded-t-lg w-full bg-zinc-50 dark:bg-primary-black-link-hover">
       <div className="flex gap-0.5 items-center">
         <span
           dangerouslySetInnerHTML={{ __html }}
           className="w-6 h-6 flex justify-center items-center"
         />
-        <p className="text-dark-white text-pretty font-mono text-sm">{title}</p>
+        <p className="dark:text-dark-white text-pretty font-mono text-sm">
+          {title}
+        </p>
       </div>
       <CopyCode textToCopy={code} />
     </div>

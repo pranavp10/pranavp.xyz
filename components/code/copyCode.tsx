@@ -9,6 +9,7 @@ const CopyCode: FC<{
   const [copy, setCopy] = useState(false);
   return (
     <button
+      className="dark:text-dark-white-300 text-zinc-500"
       onClick={() => {
         navigator.clipboard.writeText(textToCopy);
         setCopy(true);

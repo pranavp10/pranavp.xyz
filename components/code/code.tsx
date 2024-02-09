@@ -19,7 +19,7 @@ export const CodeWindow = ({
       code={code}
       lang={lang}
       lineNumbers={showLineNumbers}
-      theme={themeData}
+      theme={{ dark: themeData, light: "github-light" }}
       title={title}
       className="border dark:border-dark-white-50 rounded-md text-sm font-medium leading-[1.8] code !m-0"
     />

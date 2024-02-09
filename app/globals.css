@@ -26,29 +26,29 @@
   @apply list-disc;
 }
 .blog ul {
-  @apply list-disc text-dark-white-300 text-pretty ml-4;
+  @apply list-disc text-zinc-500 dark:text-dark-white-300 text-pretty ml-4;
 }
 .blog ol {
-  @apply list-decimal ml-4 text-dark-white-300 text-pretty text-sm;
+  @apply list-decimal ml-4 text-zinc-500 dark:text-dark-white-300 text-pretty text-sm;
 }
 
 .blog p {
-  @apply text-dark-white-300 text-pretty;
+  @apply text-zinc-500 dark:text-dark-white-300 text-pretty;
 }
 .blog h1 {
-  @apply text-dark-white-900 text-lg font-medium text-pretty mt-6;
+  @apply text-zinc-900 dark:text-dark-white-900 text-lg font-medium text-pretty mt-6;
 }
 .blog h2 {
-  @apply text-dark-white-900 text-lg font-medium text-pretty mt-6;
+  @apply text-zinc-900 dark:text-dark-white-900 text-lg font-medium text-pretty mt-6;
 }
 .blog h3 {
-  @apply text-dark-white-900 text-lg font-medium text-pretty mt-6;
+  @apply text-zinc-900 dark:text-dark-white-900 text-lg font-medium text-pretty mt-6;
 }
 .blog h4 {
-  @apply text-dark-white-900 text-lg font-medium text-pretty mt-6;
+  @apply text-zinc-900 dark:text-dark-white-900 text-lg font-medium text-pretty mt-6;
 }
 .blog h5 {
-  @apply text-dark-white-900 text-lg font-medium text-pretty;
+  @apply text-zinc-900 dark:text-dark-white-900 text-lg font-medium text-pretty;
 }
 
 .blog a {

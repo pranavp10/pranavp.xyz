@@ -31,7 +31,7 @@ const ProjectCard = ({
       <a
         href={githubLink}
         target="_blank"
-        className="text-sm rounded-md dark:bg-primary-black-link-hover dark:hover:text-dark-white hover:text-zinc-900 dark:text-dark-white-300"
+        className="text-sm dark:hover:text-dark-white hover:text-zinc-900 dark:text-dark-white-300"
       >
         <span className="sr-only">Github</span>
         <svg

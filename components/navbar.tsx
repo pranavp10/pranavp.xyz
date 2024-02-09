@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Icon from "./icon/icon";
-import { NavLinkItem } from "./NavLinkItem";
+import { NavLinkItem } from "./navLinkItem";
 
 const NavBar = () => (
   <nav className="sticky top-4 z-10">

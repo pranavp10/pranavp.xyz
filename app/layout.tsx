@@ -4,7 +4,8 @@ import "./globals.css";
 import NavBar from "@/components/navbar";
 import { IconsSprite } from "../components/icon/iconsSprite";
 import { Footer } from "@/components/footer";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/components/theme/themeProvider";
+import DataThemeElement from "@/components/theme/dataThemeElement";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -70,6 +71,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <DataThemeElement />
           <div className="px-4 py-2">
             <NavBar />
             {children}
