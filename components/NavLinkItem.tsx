@@ -3,13 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export const NavLinkItem = ({
-  link,
-  title,
-}: {
-  link: string;
-  title: string;
-}) => {
+const NavLinkItem = ({ link, title }: { link: string; title: string }) => {
   const pathname = usePathname();
 
   return (
@@ -30,3 +24,5 @@ export const NavLinkItem = ({
     </div>
   );
 };
+
+export default NavLinkItem;
