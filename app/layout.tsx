@@ -6,8 +6,6 @@ import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/theme/themeProvider";
 import DataThemeElement from "@/components/theme/dataThemeElement";
 import NavBar from "@/components/navbar";
-import Script from "next/script";
-import { PlausibleProvider } from "@/components/PlausibleProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -64,25 +62,30 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          defer
+          data-domain="pranavp.xyz"
+          src="https://plausible.pranavp.xyz/js/script.js"
+        ></script>
+      </head>
       <body
         className={`text-primary-black bg-white transition-colors duration-1000 dark:text-dark-white-900 dark:bg-primary-black  ${inter.className}`}
       >
-        <PlausibleProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <DataThemeElement />
-            <div className="px-4 py-2">
-              <NavBar />
-              {children}
-              <Footer />
-              <IconsSprite />
-            </div>
-          </ThemeProvider>
-        </PlausibleProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <DataThemeElement />
+          <div className="px-4 py-2">
+            <NavBar />
+            {children}
+            <Footer />
+            <IconsSprite />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
