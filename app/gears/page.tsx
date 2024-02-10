@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Optimizing Productivity: Unveiling the Essential Gears for Seamless Workflow | Pranav P",
     description:
       "Discover the secret to a seamless and efficient workflow as I unveil the productivity tools that power my daily endeavors. Delve into the tech landscape that keeps me at the forefront of productivity, exploring the gears that transform tasks into achievements. From essential tools to innovative solutions, join me in unlocking the potential of a streamlined work process. Elevate your own productivity game by exploring the gears that make every moment count.",
-    url: `${process.env.PUBLIC_URL}/gears`,
+    url: `${process.env.NEXT_PUBLIC_URL}/gears`,
     type: "website",
     siteName: "Gears | Pranav P",
   },

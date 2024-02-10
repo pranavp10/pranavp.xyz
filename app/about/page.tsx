@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "About Pranav Patel",
     description:
       "Hey, I'm Pranav, a passionate software engineer with a love for gadgets and design.",
-    url: `${process.env.PUBLIC_URL}/gears`,
+    url: `${process.env.NEXT_PUBLIC_URL}/gears`,
     type: "website",
     siteName: "About | Pranav P",
   },

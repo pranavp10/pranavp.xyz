@@ -29,10 +29,12 @@ export async function generateMetadata({
         openGraph: {
           title: post.title,
           description: post.description,
-          url: `${process.env.PUBLIC_URL}/blog/${slug}`,
+          url: `${process.env.NEXT_PUBLIC_URL}/blog/${slug}`,
           type: "website",
           siteName: "Blog | Pranav",
-          images: [{ url: `${process.env.PUBLIC_URL}/${post.imageName}.png` }],
+          images: [
+            { url: `${process.env.NEXT_PUBLIC_URL}/${post.imageName}.png` },
+          ],
         },
         twitter: {
           card: "summary_large_image",

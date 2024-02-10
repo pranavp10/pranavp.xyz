@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Resume | Pranav Patel",
     description: about,
-    url: `${process.env.PUBLIC_URL}/work`,
+    url: `${process.env.NEXT_PUBLIC_URL}/work`,
     type: "website",
     siteName: " Resume | Pranav P",
   },

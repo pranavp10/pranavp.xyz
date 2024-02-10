@@ -19,7 +19,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.PUBLIC_URL!),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_URL!),
   alternates: {
     canonical: "/",
     languages: {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Pranav P - Frontend Developer",
     description:
       "Experienced Frontend Developer specializing in JavaScript, React, and UI/UX design. Explore my portfolio for innovative projects and a user-friendly approach to development.",
-    url: process.env.PUBLIC_URL,
+    url: process.env.NEXT_PUBLIC_URL,
     type: "website",
     images: "/og-image.png",
     siteName: "Pranav P - Portfolio",

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
       "Tech-Savvy Professional: A Journey of Expertise in Frameworks, Languages, and Methodologies | Pranav P",
     description:
       "Embark on a voyage through my professional evolution, where I've cultivated a wealth of technology expertise. Dive into the depths of my hands-on experience, as I hone skills in diverse frameworks, languages, and methodologies. This journey not only elevates my software development proficiency but also enriches problem-solving capabilities and widens my tech perspective. Join me in navigating the dynamic tech landscape, fueled by a commitment to continuous learning and adaptability",
-    url: `${process.env.PUBLIC_URL}/skills`,
+    url: `${process.env.NEXT_PUBLIC_URL}/skills`,
     type: "website",
     siteName: " Skills | Pranav P",
   },

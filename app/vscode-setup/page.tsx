@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "My Daily Coding Companion: A Deep Dive into My VS Code Setup | Pranav P",
     description:
       "Unlock the potential of Visual Studio Code with an insider's look into the settings that shape my daily coding experience. Dive into the heart of efficiency as I share the VS Code configurations I rely on every day. From personalized preferences to must-have extensions, this exploration will empower you to optimize your own coding environment. Elevate your coding game with insights into the VS Code setup that fuels my productivity",
-    url: `${process.env.PUBLIC_URL}/vscode-setup`,
+    url: `${process.env.NEXT_PUBLIC_URL}/vscode-setup`,
     type: "website",
     siteName: "Vs Code Settings | Pranav P",
   },

@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const WEBSITE_URL = process.env.PUBLIC_URL
+    const WEBSITE_URL = process.env.NEXT_PUBLIC_URL
 
     const siteLinks: SitemapFile[] = links.map((slug) => ({
         url: `${WEBSITE_URL}${slug}`,
