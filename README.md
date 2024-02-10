@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [pranavp.xyz](https://pranavp.xyz)
 
-## Getting Started
+## Overview
 
-First, run the development server:
+Welcome to the repository of Pranav P's portfolio. This portfolio showcases Pranav's skills, projects, and achievements.
+
+## Technologies Used
+
+- **Framework:** [Next.js](https://nextjs.org)
+- **Database:** [Postgress](http://postgresql.org)
+- **Authentication:** [Next Auth](https://next-auth.js.org)
+- **Deployment:** [Coolify](https://coolify.io)
+- **Styling:** [Tailwind CSS](http://tailwindcss.com)
+- **Analytics:** [Plausible](https://plausible.io)
+
+## Running Locally
+
+Ensure that you have Node.js installed and use pnpm for package management.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/pranavp10/portfolio.git
+cd portfolio
+pnpm install
+pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create a `.env.local` file similar to `.env.example`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployments
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The portfolio is deployed using [Coolify](https://coolify.io) self hosted. Automatic deployments are triggered when changes are pushed to the main branch.
 
-## Learn More
+[Live Portfolio Link](https://pranavp.xyz)
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You are free to use this code as inspiration. Please do not copy it directly. Crediting the author is appreciated. Please remove all personal information (images, etc.)
