@@ -11,7 +11,7 @@ Welcome to the repository of Pranav P's portfolio. This portfolio showcases Pran
 - **Authentication:** [Next Auth](https://next-auth.js.org)
 - **Deployment:** [Coolify](https://coolify.io)
 - **Styling:** [Tailwind CSS](http://tailwindcss.com)
-- **Analytics:** [Plausible](https://plausible.io)
+- **Analytics:** [Plausible](https://plausible.pranavp.xyz/pranavp.xyz)
 
 ## Running Locally
 
