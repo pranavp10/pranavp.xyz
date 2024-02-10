@@ -6,7 +6,7 @@ import PlausibleProviderWrapper from "next-plausible";
 export function PlausibleProvider({ children }: { children: React.ReactNode }) {
   return (
     <PlausibleProviderWrapper
-      customDomain="https://plausible.pranavp.xyz/js/script.js"
+      customDomain="https://plausible.pranavp.xyz"
       domain="pranavp.xyz"
       selfHosted
     >
