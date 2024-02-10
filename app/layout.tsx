@@ -70,14 +70,9 @@ export default function RootLayout({
         ></script>
       </head>
       <body
-        className={`text-primary-black bg-white transition-colors duration-1000 dark:text-dark-white-900 dark:bg-primary-black  ${inter.className}`}
+        className={`text-primary-black bg-white  dark:text-dark-white-900 dark:bg-primary-black  ${inter.className}`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <DataThemeElement />
           <div className="px-4 py-2">
             <NavBar />
