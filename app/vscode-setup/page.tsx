@@ -60,7 +60,7 @@ const Page = () => (
             <a
               href="/download/operator-mono.zip"
               download
-              className="flex items-center justify-center gap-2 text-zinc-500 dark:text-dark-white-300 px-4 rounded-lg py-1.5 font-medium border dark:border-dark-white-50 text-center dark:hover:bg-dark-white-50 font-mono dark:hover:text-dark-white group transition duration-300 ease-in-out hover:bg-zinc-100 hover:text-zinc-700"
+              className="flex items-center justify-center gap-2 text-zinc-500 dark:text-dark-white-300 px-4 rounded-lg py-1.5 font-medium border dark:border-dark-white-50 text-center dark:hover:bg-dark-white-50 font-mono dark:hover:text-dark-white group transition duration-300 ease-in-out hover:bg-zinc-100/50 hover:text-zinc-700"
             >
               operator-mono.zip{" "}
               <svg
@@ -90,7 +90,7 @@ const Page = () => (
             <a
               href="/download/vsc-extensions.txt"
               download
-              className="flex items-center justify-center gap-2 text-zinc-500 dark:text-dark-white-300 px-4 rounded-lg py-1.5 font-medium border dark:border-dark-white-50 text-center dark:hover:bg-dark-white-50 font-mono dark:hover:text-dark-white group transition duration-300 ease-in-out hover:bg-zinc-100 hover:text-zinc-700"
+              className="flex items-center justify-center gap-2 text-zinc-500 dark:text-dark-white-300 px-4 rounded-lg py-1.5 font-medium border dark:border-dark-white-50 text-center dark:hover:bg-dark-white-50 font-mono dark:hover:text-dark-white group transition duration-300 ease-in-out hover:bg-zinc-100/50 hover:text-zinc-700"
             >
               vsc-extensions.txt{" "}
               <svg

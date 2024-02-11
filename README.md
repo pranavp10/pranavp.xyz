@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the repository of Pranav P's portfolio. This portfolio showcases Pranav's skills, projects, and achievements.
+Welcome to the repository of Pranav P's portfolio. This portfolio showcases Pranav's skills, projects, work and achievements.
 
 ## Technologies Used
 

@@ -14,6 +14,7 @@ const config: Config = {
         'primary-black': '#090909',
         'primary-black-link-hover': '#131313',
         'primary-border': '#FAFAFA',
+        'primary-gray': { '500': '#736f70' },
         'highlight': '#ff8000',
         'highlight-50': '#ff80001a',
         'highlight-100': '#ff80002a',

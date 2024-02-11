@@ -52,7 +52,7 @@ const Home = async () => {
           <div className="mt-3 flex justify-center">
             <Link
               href="/projects"
-              className="dark:text-dark-white-300 px-4 rounded-lg py-2.5 text-sm font-medium dark:hover:text-dark-white border dark:border-dark-white-50 dark:hover:bg-primary-black-link-hover  w-full text-center transition duration-300 ease-in-out hover:bg-zinc-100 text-zinc-600"
+              className="dark:text-dark-white-300 px-4 rounded-lg py-2.5 text-sm font-medium dark:hover:text-dark-white border dark:border-dark-white-50 dark:hover:bg-primary-black-link-hover  w-full text-center transition duration-300 ease-in-out hover:bg-zinc-100/50 text-zinc-600"
             >
               Sell all
             </Link>
@@ -72,7 +72,7 @@ const Home = async () => {
           <div className="mt-3 flex justify-center">
             <Link
               href="/blog"
-              className="dark:text-dark-white-300 px-4 rounded-lg py-2.5 text-sm font-medium dark:hover:text-dark-white border dark:border-dark-white-50 dark:hover:bg-primary-black-link-hover  w-full text-center transition duration-300 ease-in-out hover:bg-zinc-100 text-zinc-600"
+              className="dark:text-dark-white-300 px-4 rounded-lg py-2.5 text-sm font-medium dark:hover:text-dark-white border dark:border-dark-white-50 dark:hover:bg-primary-black-link-hover  w-full text-center transition duration-300 ease-in-out hover:bg-zinc-100/50 text-zinc-600"
             >
               Sell all
             </Link>
@@ -87,6 +87,12 @@ const Home = async () => {
               iconName="coding"
               title="Skill & technology"
               description="The knowledge I've gained through years of experience in technology."
+            />
+            <BasicCard
+              link="/journey"
+              iconName="route"
+              title="Journey"
+              description="My path to becoming a software engineer. Experiences and Learnings"
             />
           </div>
         </div>

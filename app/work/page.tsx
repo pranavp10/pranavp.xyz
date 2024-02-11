@@ -48,7 +48,7 @@ const Page = () => {
                 rel="rel"
                 href={url}
                 key={url}
-                className="text-zinc-500 dark:text-dark-white-300 dark:border-dark-white-100 rounded-md hover:bg-dark-white-100 border p-1.5 dark:hover:text-dark-white-900 hover:bg-zinc-100 hover:text-black"
+                className="text-zinc-500 dark:text-dark-white-300 dark:border-dark-white-100 rounded-md dark:hover:bg-dark-white-100 border p-1.5 dark:hover:text-dark-white-900 hover:bg-zinc-100/50 hover:text-black"
               >
                 {icon}
               </a>

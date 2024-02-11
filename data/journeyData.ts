@@ -43,13 +43,6 @@ export const journeyData = [
     },
     {
         year: 2020,
-        title: "Joined Quze (Education)",
-        description:
-            "I'm fortunate to be part of the company, especially grateful to the founder who helped me enhance my skills with the latest technologies. This is when I started working with Next.js, Tailwind, and Chakra UI.",
-    },
-    {
-        sameYear: true,
-        year: 2020,
         title: "Joined Quze",
         description:
             "I'm fortunate to be part of the company, especially grateful to the founder who helped me enhance my skills with the latest technologies. This is when I started working with Next.js, Tailwind, and Chakra UI.",
