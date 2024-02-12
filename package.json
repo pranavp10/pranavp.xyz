@@ -1,7 +1,31 @@
 {
-  "name": "pranavp10.com",
+  "name": "pranavp.xyz",
   "version": "0.1.0",
   "private": true,
+  "description": "This portfolio showcases Pranav's skills, projects, work and achievements.",
+  "author": {
+    "name": "Pranav",
+    "email": "hi@pranavp.xyz",
+    "website": "https://pranavp.xyz",
+    "twitter": "https://twitter.com/thatspranav",
+    "linkedin": "https://www.linkedin.com/in/pranavp10/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pranavp10/portfolio"
+  },
+  "keywords": [
+    "portfolio",
+    "web development",
+    "react",
+    "tailwind",
+    "nextjs",
+    "software engineer",
+    "coolify",
+    "tech",
+    "blogs"
+  ],
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

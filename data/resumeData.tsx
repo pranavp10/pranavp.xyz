@@ -40,12 +40,12 @@ export const RESUME_DATA: ResumeData = {
   summary:
     "As a Full Stack Engineer, I've developed products entirely from scratch to production. Currently, I work mostly with TypeScript, React, Next.js, and GraphQL. I have over 4+ years of experience in working remotely with companies all around the world.",
   avatarUrl: "/logo.png",
-  personalWebsiteUrl: "https://www.pranavp10.com/",
+  personalWebsiteUrl: "https://pranavp.xyz/",
   contact: {
     social: [
       {
         name: "Mail",
-        url: "mailto:hello@pranavp10.com",
+        url: "mailto:hello@pranavp.xyz",
         icon: <Icon name="social-mail" className="w-4 h-4" />,
       },
       {

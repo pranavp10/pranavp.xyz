@@ -5,7 +5,7 @@ export const journeyData = [
         description:
             "Revamped my portfolio with a new design, and as a developer, grasping the design aspect was challenging. However, I successfully navigated it, giving my portfolio a fresh and appealing look.",
         imageURl: '/journey/portfolio.png',
-        url: 'https://www.pranavp10.com/'
+        url: 'https://pranavp.xyz/'
 
     },
     {

@@ -21,16 +21,16 @@ const Home = async () => {
         </p>
         <div className="mt-4 flex gap-2 items-center">
           <a
-            href="mailto:hi@pranavp10.com?subject=Work inquiry"
+            href="mailto:hi@pranavp.xyz?subject=Work inquiry"
             className="text-highlight bg-highlight-50 px-4 rounded-lg py-1.5 text-sm font-medium hover:bg-highlight-100 transition duration-300 ease-in-out"
           >
             Open for project -{">"}
           </a>
           <a
-            href="mailto:hi@pranavp10.com"
+            href="mailto:hi@pranavp.xyz"
             className="dark:text-dark-white-300 dark:bg-primary-black-link-hover px-4 rounded-lg py-1.5 text-sm font-medium dark:hover:text-dark-white transition duration-300 ease-in-out bg-zinc-100 text-zinc-500 hover:text-zinc-900"
           >
-            hi@pranavp10.com
+            hi@pranavp.xyz
           </a>
         </div>
         <div className="mt-16">
@@ -43,7 +43,6 @@ const Home = async () => {
                 displayLink={project.displayLink}
                 description={project.description}
                 githubLink={project.githubLink}
-                techStack={project.techStack}
                 title={project.title}
                 imageUrl={project.imageUrl}
               />

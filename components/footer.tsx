@@ -21,9 +21,7 @@ export const Footer = () => {
                 className="flex items-center gap-1"
               >
                 <p>
-                  {social.name === "Mail"
-                    ? "hi@pranavp10.com"
-                    : `${social.name}`}
+                  {social.name === "Mail" ? "hi@pranavp.xyz" : `${social.name}`}
                 </p>
                 <Icon
                   name="social-link"

@@ -4,7 +4,6 @@ import Icon from "../icon/icon";
 const ProjectCard = ({
   link,
   title,
-  techStack,
   description,
   githubLink,
   imageUrl,
@@ -14,7 +13,6 @@ const ProjectCard = ({
   title: string;
   description: string;
   githubLink: string;
-  techStack: string[];
   imageUrl: string;
   displayLink: string;
 }) => (
