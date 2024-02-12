@@ -16,22 +16,24 @@ const Page = () => {
           {journeyData.map((data, index) => (
             <div key={data.year} className="relative">
               {journeyData.length - 1 != index && (
-                <div className="border do absolute top-0 bottom-0 mt-14 ml-[105px] border-dashed dark:border-dark-white-100" />
+                <div className="sm:border do absolute top-0 bottom-0 mt-14 sm:ml-[105px] border-dashed dark:border-dark-white-100" />
               )}
-              <div className="grid grid-cols-8 gap-12 items-center">
+              <div className="sm:grid grid-cols-8 gap-12 items-center">
                 <p
-                  className={`font-medium ${data?.sameYear ? "invisible" : ""}`}
+                  className={`font-medium ${
+                    data?.sameYear ? "hidden sm:invisible" : ""
+                  }`}
                 >
                   {data.year}
                 </p>
-                <div className="col-span-6">
+                <div className="hidden sm:block sm:col-span-6">
                   <IconTitleCard
                     icon={<Icon name="plus" className={iconClassName} />}
                     title={data.title}
                   />
                 </div>
               </div>
-              <div className="ml-36">
+              <div className="sm:ml-36">
                 <p className="text-zinc-500 dark:text-dark-white-300 font-mono text-[13px] tracking-wider text-pretty">
                   {data.description}
                 </p>
@@ -42,7 +44,7 @@ const Page = () => {
                       width={584}
                       height={585}
                       alt="image of website"
-                      className="mt-4 rounded-xl w-full h-96 object-cover"
+                      className="mt-4 rounded-xl w-full sm:h-96 object-cover"
                     />
                     <p className="absolute right-2 bottom-1 bg-primary-black/20 text-xs px-2 py-0.5 rounded-md">
                       {data.url}
