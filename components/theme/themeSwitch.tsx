@@ -17,7 +17,7 @@ const ThemeSwitch = () => {
   }
 
   return (
-    <div className="flex space-x-1 border dark:border-dark-white-100 rounded-full py-1 px-2">
+    <div className="flex space-x-1 border dark:border-dark-white-100 rounded-full py-1 px-2 relative">
       {tabs.map((tab) => (
         <button
           key={tab.id}

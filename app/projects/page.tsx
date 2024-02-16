@@ -19,7 +19,6 @@ const Page = () => {
               displayLink={project.displayLink}
               description={project.description}
               githubLink={project.githubLink}
-              techStack={project.techStack}
               title={project.title}
               imageUrl={project.imageUrl}
             />
