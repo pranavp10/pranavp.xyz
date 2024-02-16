@@ -36,7 +36,7 @@ const Home = async () => {
         <div className="mt-16">
           <h2 className="text-xl font-medium">Projects</h2>
           <div className="mt-3 grid sm:grid-cols-2 gap-3">
-            {projects.map((project) => (
+            {[projects[0], projects[1]].map((project) => (
               <ProjectCard
                 key={project.link}
                 link={project.link}

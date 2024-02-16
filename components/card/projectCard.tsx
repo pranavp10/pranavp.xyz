@@ -23,7 +23,7 @@ const ProjectCard = ({
         src={imageUrl}
         width={36}
         height={36}
-        className="rounded-full w-9 h-9"
+        className="w-9 h-9"
         alt="logo of project"
       />
       <a
