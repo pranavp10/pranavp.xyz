@@ -21,7 +21,7 @@ const Page = () => {
               <div className="sm:grid grid-cols-8 gap-12 items-center">
                 <p
                   className={`font-medium ${
-                    data?.sameYear ? "hidden sm:invisible" : ""
+                    data?.sameYear ? "hidden sm:block sm:invisible" : ""
                   }`}
                 >
                   {data.year}
