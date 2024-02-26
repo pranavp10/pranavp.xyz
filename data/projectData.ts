@@ -8,12 +8,12 @@ export const projects = [
         imageUrl: "/logo/ai-dayblog.svg"
     },
     {
-        link: "https://videoconverter.prolab.sh/",
-        displayLink: "videoconverter.prolab.sh",
-        description: "Free Offline Video Converter for Social Media Platforms!",
-        githubLink: "https://github.com/pranavp10/video-converter",
-        title: "Video Converter",
-        imageUrl: "/logo/video-converter-prolab-sh.svg"
+        link: "https://videocompress.prolab.sh/",
+        displayLink: "videocompress.prolab.sh",
+        description: "Compress Videos for Free. Forever.",
+        githubLink: "https://github.com/pranavp10/video-compress",
+        title: "Video Compress",
+        imageUrl: "/logo/video-compress-prolab-sh.svg"
     },
     {
         link: "http://www.aidetective.xyz/",
