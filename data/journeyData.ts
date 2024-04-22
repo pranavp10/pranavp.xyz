@@ -1,12 +1,32 @@
 export const journeyData = [
     {
         year: 2024,
+
+        title: "Invoice Generator",
+        description:
+            "Developed an invoice generator that I utilize monthly for sending invoices to my current employer.",
+        imageURl: '/journey/invoice-generator.jpeg',
+        url: 'https://invoice-generator.prolab.sh'
+    },
+    {
+        year: 2024,
+        sameYear: true,
+
+        title: "Compress video",
+        description:
+            "Created a tool utilizing FFmpeg and web assembly to compress videos.",
+        imageURl: '/journey/compress.jpeg',
+        url: 'https://videocompress.prolab.sh'
+    },
+    {
+        year: 2024,
+        sameYear: true,
+
         title: "New UI for my website",
         description:
             "Revamped my portfolio with a new design, and as a developer, grasping the design aspect was challenging. However, I successfully navigated it, giving my portfolio a fresh and appealing look.",
         imageURl: '/journey/portfolio.png',
         url: 'https://pranavp.xyz/'
-
     },
     {
         year: 2023,
