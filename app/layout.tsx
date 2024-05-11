@@ -1,16 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { IconsSprite } from "@/components/icon/iconsSprite";
 import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/theme/themeProvider";
 import DataThemeElement from "@/components/theme/dataThemeElement";
 import NavBar from "@/components/navbar";
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
+import { GeistSans } from "geist/font/sans";
 
 export const viewport: Viewport = {
   themeColor: "black",
@@ -70,7 +65,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body
-        className={`text-primary-black bg-white  dark:text-dark-white-900 dark:bg-primary-black  ${inter.className}`}
+        className={`text-primary-black bg-white  dark:text-dark-white-900 dark:bg-primary-black ${GeistSans.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <DataThemeElement />
