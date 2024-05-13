@@ -48,10 +48,6 @@ const links = [
     link: "/about",
   },
   {
-    title: "Work",
-    link: "/work",
-  },
-  {
     title: "Blog",
     link: "/blog",
   },
