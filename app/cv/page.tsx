@@ -38,7 +38,7 @@ const Page = () => {
       <div className="flex mt-16 gap-5 items-center">
         <header>
           <h1 className="font-semibold text-2xl">{name}</h1>
-          <p className="text-zinc-500  dark:text-dark-white-300 mt-2 tracking-wider">
+          <p className="text-zinc-500 dark:text-dark-white-300 mt-2 tracking-wider">
             {summary}
           </p>
         </header>
@@ -48,7 +48,7 @@ const Page = () => {
         <div className="grid grid-cols-4 gap-y-4">
           {contact.social.map(({ url, name, displayName }) => (
             <>
-              <p className="text-zinc-400 dark:text-dark-white-300" key={url}>
+              <p className="text-zinc-500 dark:text-dark-white-300" key={url}>
                 {name}
               </p>
               <a
