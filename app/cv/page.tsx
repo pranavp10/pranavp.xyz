@@ -34,24 +34,21 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <main className="max-w-xl w-full m-auto ">
+    <main className="max-w-2xl w-full m-auto pb-20">
       <div className="flex mt-16 gap-5 items-center">
         <header>
-          <h1 className="text-xl font-medium">{name}</h1>
-          <p className="text-zinc-500 dark:text-dark-white-300 text-pretty text-sm mt-2">
+          <h1 className="font-semibold text-2xl">{name}</h1>
+          <p className="text-zinc-500  dark:text-dark-white-300 mt-2 tracking-wider">
             {summary}
           </p>
         </header>
       </div>
       <div>
-        <h2 className="mt-8 mb-5">Contact</h2>
+        <h2 className="mt-8 mb-5 text-lg">Contact</h2>
         <div className="grid grid-cols-4 gap-y-4">
           {contact.social.map(({ url, name, displayName }) => (
             <>
-              <p
-                className="text-zinc-400 dark:text-dark-white-300 text-sm"
-                key={url}
-              >
+              <p className="text-zinc-400 dark:text-dark-white-300" key={url}>
                 {name}
               </p>
               <a
@@ -59,7 +56,7 @@ const Page = () => {
                 rel="rel"
                 href={url}
                 key={url}
-                className="col-span-3 text-sm flex items-center gap-1 hover:text-highlight group"
+                className="col-span-3 flex items-center gap-1 hover:text-highlight group"
               >
                 {displayName}
                 <Icon
@@ -71,9 +68,8 @@ const Page = () => {
           ))}
         </div>
       </div>
-
       <div className="mt-8">
-        <h3 className="mb-5">Work Experience</h3>
+        <h3 className="mb-5 text-lg">Work Experience</h3>
         <div className="mt-3 grid gap-5">
           {work.map((data) => (
             <CVExperienceCard
@@ -89,16 +85,11 @@ const Page = () => {
           ))}
         </div>
         <div className="mt-8">
-          <h3 className="mb-5">Projects</h3>
+          <h3 className="mb-5 text-lg">Projects</h3>
           <div className="space-y-10">
             {projects.map((project) => (
-              <div
-                key={project.title}
-                className="grid grid-cols-4 gap-y-4 text-sm"
-              >
-                <p className="text-zinc-500 dark:text-dark-white-300 text-sm">
-                  2024
-                </p>
+              <div key={project.title} className="grid grid-cols-4 gap-y-4">
+                <p className="text-zinc-500 dark:text-dark-white-300">2024</p>
                 <div className="col-span-3 space-y-2 transition ease-in-out duration-200  cursor-pointer p-4 border dark:border-dark-white-50 rounded-xl dark:hover:border-dark-white-100 flex flex-col hover:border-highlight group relative">
                   <a
                     target="_blank"
@@ -134,17 +125,15 @@ const Page = () => {
           </div>
         </div>
         <div className="mt-8">
-          <h3 className="mb-5">Skills</h3>
-          <div className="grid grid-cols-4 gap-y-4 text-sm">
-            <p className="text-zinc-500 dark:text-dark-white-300 text-sm">
-              Tech Stack
-            </p>
+          <h3 className="mb-5 text-lg">Skills</h3>
+          <div className="grid grid-cols-4 gap-y-4">
+            <p className="text-zinc-500 dark:text-dark-white-300">Tech Stack</p>
             <div className="col-span-3">
               <div className="flex gap-2 flex-wrap">
                 {skills.map((skill) => (
                   <p
                     key={skill}
-                    className="dark:bg-dark-white-100 py-0.5 text-xs px-3 rounded-full dark:border-dark-white-50 border font-medium bg-zinc-50"
+                    className="dark:bg-dark-white-100 py-0.5 text-sm px-3 rounded-full dark:border-dark-white-50 border font-medium bg-zinc-50"
                   >
                     {skill}
                   </p>
@@ -152,12 +141,12 @@ const Page = () => {
 
                 <Link
                   href="/skills"
-                  className="transition ease-in-out duration-300 dark:bg-dark-white-100 hover:bg-highlight-100 hover:border-highlight hover:text-highlight font-medium py-0.5 text-xs px-3 rounded-full dark:border-dark-white-50 border flex gap-1 group bg-zinc-50"
+                  className="transition ease-in-out duration-300 dark:bg-dark-white-100 hover:bg-highlight-100 hover:border-highlight hover:text-highlight font-medium py-0.5 text-sm px-3 rounded-full dark:border-dark-white-50 border flex gap-1 group bg-zinc-50"
                 >
                   See all
                   <Icon
                     name="social-link"
-                    className="w-1.5 h-1.5 group-hover:scale-125 mt-1"
+                    className="w-1.5 h-1.5 group-hover:scale-125 mt-1.5"
                   />
                 </Link>
               </div>
@@ -165,15 +154,15 @@ const Page = () => {
           </div>
         </div>
         <div className="mt-8">
-          <h3 className="mb-5">Education</h3>
+          <h3 className="mb-5 text-lg">Education</h3>
           {education.map((ed) => (
-            <div key={ed.end} className="grid grid-cols-4 gap-y-4 text-sm">
-              <p className="text-zinc-500 dark:text-dark-white-300 text-sm">
+            <div key={ed.end} className="grid grid-cols-4 gap-y-4 ">
+              <p className="text-zinc-500 dark:text-dark-white-300">
                 {ed.start} - {ed.end}
               </p>
               <div className="col-span-3">
                 <p>{ed.degree}</p>
-                <p className="text-zinc-500 dark:text-dark-white-300 tracking-wider text-sm mt-1.5 text-pretty">
+                <p className="text-zinc-500 dark:text-dark-white-300 tracking-wider mt-1.5 text-pretty">
                   {ed.school}
                 </p>
               </div>
@@ -184,5 +173,4 @@ const Page = () => {
     </main>
   );
 };
-
 export default Page;

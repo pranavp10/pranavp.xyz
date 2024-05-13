@@ -91,7 +91,7 @@ export const CV_DATA: ResumeData = {
       link: "https://www.orah.com/",
       location: "Remote",
       title: "Software engineer",
-      start: "2023",
+      start: "2024",
       end: "Now",
       descriptions: [
         "Engineered a highly efficient input design system for the Orah Family app, resulting in a 30% increase in user satisfaction and a 20% decrease in development time",
