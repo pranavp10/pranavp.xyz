@@ -1,10 +1,5 @@
-import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { IconsSprite } from "@/components/icon/iconsSprite";
-import { Footer } from "@/components/footer";
-import { ThemeProvider } from "@/components/theme/themeProvider";
-import DataThemeElement from "@/components/theme/dataThemeElement";
-import NavBar from "@/components/navbar";
+import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 
 export const viewport: Viewport = {
@@ -67,15 +62,7 @@ export default function RootLayout({
       <body
         className={`text-primary-black bg-white  dark:text-dark-white-900 dark:bg-primary-black ${GeistSans.className}`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <DataThemeElement />
-          <div className="px-4 py-2">
-            <NavBar />
-            {children}
-            <Footer />
-            <IconsSprite />
-          </div>
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Icon from "@/components/icon/icon";
-import IconTitleCard from "../gears/components/iconsTitleCars";
 import { journeyData } from "@/data/journeyData";
+import IconTitleCard from "../gears/components/iconsTitleCars";
 
 // todo add images, and links to the UI
 const Page = () => {

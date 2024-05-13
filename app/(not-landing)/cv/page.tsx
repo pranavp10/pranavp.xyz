@@ -9,21 +9,21 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: "/work",
+    canonical: "/cv",
     languages: {
       "en-US": "/en-US",
     },
   },
-  title: "Resume | Pranav Patel",
+  title: "CV | Pranav Patel",
   description: about,
   keywords: [...skills],
   robots: "index, follow",
   openGraph: {
-    title: "Resume | Pranav Patel",
+    title: "CV | Pranav Patel",
     description: about,
-    url: `${process.env.NEXT_PUBLIC_URL}/work`,
+    url: `${process.env.NEXT_PUBLIC_URL}/cv`,
     type: "website",
-    siteName: " Resume | Pranav P",
+    siteName: " CV | Pranav P",
   },
   twitter: {
     card: "summary_large_image",

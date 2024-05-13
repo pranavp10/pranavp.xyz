@@ -3,15 +3,9 @@ import { RESUME_DATA } from "@/data/resumeData";
 import Icon from "./icon/icon";
 import Quote from "./quote";
 import ThemeSwitch from "./theme/themeSwitch";
-import { usePathname } from "next/navigation";
 
 export const Footer = () => {
   const { contact } = RESUME_DATA;
-  const pathname = usePathname();
-
-  if (pathname.includes("/cv")) {
-    return <></>;
-  }
 
   return (
     <footer className="max-w-2xl w-full m-auto mt-16 mb-24">

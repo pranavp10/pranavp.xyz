@@ -1,9 +1,9 @@
 import Icon from "@/components/icon/icon";
 import NumberList from "@/components/numberList";
-import IconTitleCard from "../gears/components/iconsTitleCars";
 import Kbd from "@/components/kbd";
 import { Metadata } from "next";
 import { CodeWindow } from "@/components/code/code";
+import IconTitleCard from "../gears/components/iconsTitleCars";
 
 export const metadata: Metadata = {
   alternates: {
