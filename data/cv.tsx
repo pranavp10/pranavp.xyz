@@ -108,7 +108,7 @@ export const CV_DATA: ResumeData = {
       start: "2021",
       end: "2022",
       descriptions: [
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
+        "Engineered a comprehensive design system for the entire now&me app. Streamlined UI components, resulting in a 40% reduction in development time and improved consistency across the app. (Skill: Yarn Workspace, React, Tailwind CSS, Framer Motion)",
         "Implemented therapy session booking feature, revolutionizing communication between therapists and patients, achieved a remarkable 30% month-on-month growth in patient bookings, fostering seamless access to vital mental health services",
         "Built a moderation dashboard that contributed to reducing abusive content by 25%",
       ],
