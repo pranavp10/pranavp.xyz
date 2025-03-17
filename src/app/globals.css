@@ -1,5 +1,67 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "BasierCircle";
+  src: url("/font/BasierCircle/basiercircle-bold-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BasierCircle";
+  src: url("/font/BasierCircle/basiercircle-bolditalic-webfont") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BasierCircle";
+  src: url("/font/BasierCircle/basiercircle-medium-webfont.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BasierCircle";
+  src: url("/font/BasierCircle/basiercircle-mediumitalic-webfont.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BasierCircle";
+  src: url("/font/BasierCircle/basiercircle-regular-webfont.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BasierCircle";
+  src: url("/font/BasierCircle/basiercircle-regularitalic-webfont.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BasierCircle";
+  src: url("/font/BasierCircle/basiercircle-semibold-webfont.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BasierCircle";
+  src: url("/font/BasierCircle/basiercircle-semibolditalic-webfont.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@theme {
+  --font-display: "BasierCircle", sans-serif;
+  --color-subtle: #52525b;
+  --color-default-brd: #e0e0e0;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -8,8 +70,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +79,101 @@
   }
 }
 
+.d-border-b {
+  @apply border-dashed border-gray-200 border-b;
+}
+.d-border-t {
+  @apply border-dashed border-gray-200 border-t;
+}
+.d-border-r {
+  @apply border-dashed border-gray-200 border-r;
+}
+.d-border-l {
+  @apply border-dashed border-gray-200 border-l;
+}
+.d-border {
+  @apply border-dashed border-gray-200 border;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.code pre {
+  max-height: 480px;
+}
+
+#code-container > div > div > div {
+  @apply bg-transparent!;
+}
+
+.blog {
+  @apply flex justify-between flex-col gap-2 text-balance;
+}
+
+.blog ul {
+  @apply list-disc text-subtle  space-y-2 text-pretty ml-4;
+}
+.blog ol {
+  @apply list-decimal ml-4 text-subtle space-y-2 text-pretty;
+}
+
+.blog p {
+  @apply text-subtle text-pretty;
+}
+.blog h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply text-lg font-medium text-pretty pt-5 pb-3;
+}
+
+.blog a {
+  @apply underline;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "BasierCircle", Helvetica, sans-serif;
 }
