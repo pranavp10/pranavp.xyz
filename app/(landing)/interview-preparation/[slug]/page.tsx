@@ -1,9 +1,12 @@
-import { getBlogDetails, getBlogs } from "@/utils/getBlogs";
 import { notFound } from "next/navigation";
-import { PostBody } from "../../../../components/blog/PostBody";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { PostBody } from "@/components/blog/PostBody";
+import {
+  getInterviewPreparationBlogs,
+  getInterviewPreparationDetails,
+} from "@/utils/getInterviewPreparationBlogs";
 
 export async function generateMetadata({
   params: { slug },
@@ -11,27 +14,27 @@ export async function generateMetadata({
   params: { slug: string };
 }) {
   try {
-    const posts = await getBlogs();
+    const posts = await getInterviewPreparationBlogs();
 
     const post = posts.find((post) => post?.slug === slug);
     if (post) {
       const metadata: Metadata = {
         alternates: {
-          canonical: `/blog/${slug}`,
+          canonical: `/interview-preparation/${slug}`,
           languages: {
             "en-US": "/en-US",
           },
         },
         title: post.title,
         description: post.description,
-        keywords: ["Blog", ...post.tags],
+        keywords: ["Blog", "interview-preparation", ...post.tags],
         robots: "index, follow",
         openGraph: {
           title: post.title,
           description: post.description,
-          url: `${process.env.NEXT_PUBLIC_URL}/blog/${slug}`,
+          url: `${process.env.NEXT_PUBLIC_URL}/interview-preparation/${slug}`,
           type: "website",
-          siteName: "Blog | Pranav",
+          siteName: "Interview Preparation | Pranav",
           images: [
             { url: `${process.env.NEXT_PUBLIC_URL}/${post.imageName}.png` },
           ],
@@ -58,7 +61,7 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  const posts = await getBlogs();
+  const posts = await getInterviewPreparationBlogs();
 
   return posts.filter((post) => {
     if (post)
@@ -69,7 +72,7 @@ export async function generateStaticParams() {
 }
 
 const Page = async ({ params }: { params: { slug: string } }) => {
-  const post = await getBlogDetails(params.slug);
+  const post = await getInterviewPreparationDetails(params.slug);
   if (!post) return notFound();
   return (
     <main className="max-w-2xl w-full m-auto">
@@ -84,11 +87,9 @@ const Page = async ({ params }: { params: { slug: string } }) => {
               </li>
             ))}
           </ul>
-          <div className="">
-            <time className="text-dark-white-300 text-pretty text-xs font-mono">
-              {post.date}
-            </time>
-          </div>
+          <time className="text-dark-white-300 text-pretty text-xs font-mono">
+            {post.date}
+          </time>
         </div>
         <Image
           src={`/blog/${post.imageName}.png`}

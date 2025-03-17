@@ -3,6 +3,7 @@ import { Code } from "bright";
 import { themeData } from "@/data/themeData";
 import { titleBar } from "@/components/code/tabContainer";
 import Info from "./Info";
+import Tag from "./tag";
 
 export const mdxComponents: MDXComponents = {
   pre: (props) => (
@@ -14,4 +15,5 @@ export const mdxComponents: MDXComponents = {
     />
   ),
   Info,
+  Tag,
 };

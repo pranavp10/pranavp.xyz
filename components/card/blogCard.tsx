@@ -1,9 +1,15 @@
 import { BlogType } from "@/types";
 import Link from "next/link";
 
-export const BlogCard = ({ blogDetails }: { blogDetails: BlogType }) => (
+export const BlogCard = ({
+  blogDetails,
+  basePath,
+}: {
+  blogDetails: BlogType;
+  basePath?: string;
+}) => (
   <Link
-    href={`/blog/${blogDetails.slug}`}
+    href={`${basePath ?? "/blog"}/${blogDetails.slug}`}
     className={
       "transition duration-200 ease-in-out border dark:border-dark-white-50 flex flex-col relative bg-origin-border bg-contain rounded-lg w-full group dark:hover:border-dark-white-100 hover:border-highlight "
     }
@@ -27,11 +33,10 @@ export const BlogCard = ({ blogDetails }: { blogDetails: BlogType }) => (
                 </li>
               ))}
             </ul>
-
-            <p className="text-zinc-500 dark:text-dark-white-300 text-pretty text-xs font-mono">
-              {blogDetails.date}
-            </p>
           </div>
+          <p className="text-zinc-500 dark:text-dark-white-300 text-pretty text-xs font-mono pt-4">
+            {blogDetails.date}
+          </p>
         </div>
       </div>
     </div>

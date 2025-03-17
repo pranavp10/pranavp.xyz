@@ -11,11 +11,11 @@ const Info = ({
   iconName: string;
   color: string;
 }) => (
-  <div className="p-2 border dark:border-dark-white-50 rounded-md w-full relative transition duration-200 ease-in-out gap-3 bg-dark-white-50">
+  <div className="p-4 border dark:border-dark-white-50 rounded-2xl w-full relative transition duration-200 ease-in-out gap-3 bg-dark-white-50 mt-4">
     <div className="flex gap-2 items-center">
       <Icon
         name={iconName}
-        className={`w-4 h-4 ${color ? color : "!text-yellow-500"} `}
+        className={`w-6 h-6 ${color ? color : "!text-yellow-500"} `}
         gradientName="gradient"
       />
       <div>
@@ -24,7 +24,7 @@ const Info = ({
         </p>
       </div>
     </div>
-    <p className="text-sm text-zinc-500 dark:text-dark-white-300 text-pretty mt-1 ml-6">
+    <p className="text-sm text-zinc-500 dark:text-dark-white-300 text-pretty mt-1 ml-8">
       {description}
     </p>
   </div>
