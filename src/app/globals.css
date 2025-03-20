@@ -75,24 +75,25 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #e2e2e2;
+    --color-subtle: #a5a5a5;
   }
 }
 
 .d-border-b {
-  @apply border-dashed border-gray-200 border-b;
+  @apply border-dashed dark:border-neutral-900 border-gray-200 border-b;
 }
 .d-border-t {
-  @apply border-dashed border-gray-200 border-t;
+  @apply border-dashed dark:border-neutral-900 border-gray-200 border-t;
 }
 .d-border-r {
-  @apply border-dashed border-gray-200 border-r;
+  @apply border-dashed dark:border-neutral-900 border-gray-200 border-r;
 }
 .d-border-l {
-  @apply border-dashed border-gray-200 border-l;
+  @apply border-dashed dark:border-neutral-900 border-gray-200 border-l;
 }
 .d-border {
-  @apply border-dashed border-gray-200 border;
+  @apply border-dashed dark:border-neutral-900 border-gray-200 border;
 }
 
 .no-scrollbar::-webkit-scrollbar {

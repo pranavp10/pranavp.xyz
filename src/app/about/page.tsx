@@ -2,7 +2,7 @@ import { Quote, quotes } from "../../components/Quote";
 
 const Page = () => {
   return (
-    <div>
+    <div className="d-border-b">
       <div className="px-7 pt-4 pb-5">
         <div className="text-subtle space-y-6 leading-relaxed">
           <p>Hi,</p>
