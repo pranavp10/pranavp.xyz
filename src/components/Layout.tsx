@@ -36,61 +36,48 @@ export const Footer = () => (
 
 export const Header = () => {
   const path = usePathname();
+
   return (
-    <header className="h-full bg-white sticky top-0 z-10">
-      <div className="flex items-center justify-between d-border-b h-full">
-        <div className="flex items-center gap-4">
-          <div className="px-5 py-2">
-            <Link href="/">
-              <Image
-                src="/logo.png"
-                width={36}
-                height={36}
-                alt="logo"
-                className="w-6 h-6 rounded-lg"
-              />
-            </Link>
-          </div>
-        </div>
-        <div className=" flex items-center text-subtle h-full">
-          <Link
-            href="/projects"
-            className={tw(
-              "relative py-2.5 px-7 h-full text-sm d-border-l",
-              path === "/projects" && "text-black font-medium"
-            )}
-          >
-            Projects
-            {path === "/projects" && (
-              <span className="border-b-black absolute inset-0 -bottom-[1px] border-b-2" />
-            )}
-          </Link>
-          <Link
-            href="/blog"
-            className={tw(
-              "py-2.5 d-border-l px-7 h-full text-sm relative",
-              path === "/blog" && "text-black font-medium"
-            )}
-          >
-            Blog
-            {path === "/blog" && (
-              <span className="border-b-black absolute inset-0 -bottom-[1px] border-b-2" />
-            )}
-          </Link>
-          <Link
-            href="/about"
-            className={tw(
-              "py-2.5 d-border-l px-7 h-full text-sm relative",
-              path === "/about" && "text-black font-medium"
-            )}
-          >
-            About
-            {path === "/about" && (
-              <span className="border-b-black absolute inset-0 -bottom-[1px] border-b-2" />
-            )}
+    <header className="sticky top-0 z-10 h-full bg-background">
+      <div className="flex items-center justify-between h-full d-border-b">
+        <div className="px-5 py-2">
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              width={36}
+              height={36}
+              alt="logo"
+              className="w-6 h-6 rounded-lg"
+            />
           </Link>
         </div>
+        <nav className="flex items-center h-full text-subtle">
+          {NAV_ITEMS.map(({ href, label }) => {
+            const isActive = path === href;
+            return (
+              <Link
+                key={href}
+                href={href}
+                className={tw(
+                  "relative py-2.5 px-7 h-full text-sm d-border-l",
+                  isActive && "text-foreground font-medium"
+                )}
+              >
+                {label}
+                {isActive && (
+                  <span className="absolute inset-0 -bottom-[1px] border-b-2 dark:border-b-white border-b-black" />
+                )}
+              </Link>
+            );
+          })}
+        </nav>
       </div>
     </header>
   );
 };
+
+const NAV_ITEMS = [
+  { href: "/projects", label: "Projects" },
+  { href: "/blog", label: "Blog" },
+  { href: "/about", label: "About" },
+];

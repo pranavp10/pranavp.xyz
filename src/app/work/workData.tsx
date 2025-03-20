@@ -76,6 +76,20 @@ export const RESUME_DATA: ResumeData = {
   ],
   work: [
     {
+      company: "Atlys",
+      link: "https://www.atlys.com",
+      location: "Remote",
+      title: "Senior Software engineer",
+      start: "Aug 2024",
+      end: "Present · 1yr",
+      descriptions: [
+        "Engineered a highly efficient input design system for the Orah Family app, resulting in a 30% increase in user satisfaction and a 20% decrease in development time",
+        "Collaborated with the team to implement a robust calendar view and recurring pass feature for a staff and student app, enhanced user accessibility and convenience, leading to a 50% decrease in scheduling conflicts",
+        "Crafted Orah nurture extension where users can add pastoral notes form extensions",
+        "Developed and collaborated robust pastoral and pastoral summary features for staff, to moderate the student's activity",
+      ],
+    },
+    {
       company: "Orah",
       link: "https://www.orah.com/",
       location: "Remote",

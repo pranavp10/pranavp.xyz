@@ -23,41 +23,51 @@ const Page = async () => {
         {posts.map((post, i) => {
           if (!post) return null;
           return (
-            <Link
+            <div
               key={post.slug}
-              href={`/blog/${post.slug}`}
-              className={tw(
-                "transition duration-200 ease-in-out flex relative w-full   px-4 hover:bg-gray-50",
-                !(i === posts.length - 1) && "d-border-b"
-              )}
+              className="group relative overflow-hidden dark:hover:bg-neutral-900 hover:bg-gray-50"
             >
-              <div className="flex flex-col p-3 w-full">
-                <div className="flex justify-between items-center pb-2">
-                  <p className="text-xs text-subtle">{post.date}</p>
-                  <ul className="flex items-center gap-2 flex-wrap">
-                    {post.tags?.map((tag) => (
-                      <li key={tag}>
-                        <p className="text-pretty text-xs px-1.5 py-[1px] d-border text-subtle rounded-md">
-                          {tag}
-                        </p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="flex gap-3 items-center">
-                  <div className=" w-full">
-                    <p className="font-medium text-lg">{post.title}</p>
-                    <p className="text-sm text-subtle text-balance mt-2">
-                      {post.description}
-                    </p>
+              <Link
+                href={`/blog/${post.slug}`}
+                className={tw(
+                  "transition-all duration-300 group-hover:-translate-y-8 ease-in-out flex relative w-full   px-4",
+                  !(i === posts.length - 1) && "d-border-b"
+                )}
+              >
+                <div className="flex flex-col p-3 w-full">
+                  <div className="flex justify-between items-center pb-2">
+                    <p className="text-xs text-subtle">{post.date}</p>
+                    <ul className="flex items-center gap-2 flex-wrap">
+                      {post.tags?.map((tag) => (
+                        <li key={tag}>
+                          <p className="text-pretty text-xs px-1.5 py-[1px] d-border text-subtle rounded-md">
+                            {tag}
+                          </p>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="flex gap-3 items-center">
+                    <div className=" w-full">
+                      <p className="font-medium text-lg">{post.title}</p>
+                      <p className="text-sm text-subtle text-balance mt-2">
+                        {post.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div className="pt-3 font-medium text-sm flex gap-1 items-center">
-                  <div>Read article</div>
-                  <Icon name="chevron-right" className="w-3 h-4" />
+                <div
+                  className={tw(
+                    "pointer-events-none absolute bottom-0 flex w-full translate-y-8 transform-gpu flex-row items-center opacity-0 transition-all duration-300 group-hover:translate-y-4 group-hover:opacity-100"
+                  )}
+                >
+                  <div className="font-medium text-sm flex gap-1 items-center pt-4 pl-3">
+                    <div>Read article</div>
+                    <Icon name="chevron-right" className="w-3 h-4" />
+                  </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           );
         })}
       </div>

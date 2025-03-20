@@ -13,13 +13,13 @@ const Projects = () => {
           worldwide. Explore my projects below!
         </p>
       </div>
-      <div className="border-gray-200 border-t border-dashed px-7 -mx-7 sticky top-0">
+      <div className="d-border-t px-7 -mx-7 sticky top-0">
         <div className="grid grid-cols-2">
           {projects.map((project, i) => (
             <div
               key={project.title}
               className={twMerge(
-                "px-7 py-5 h-full hover:bg-gray-50 relative text-left w-full",
+                "px-7 py-5 h-full dark:hover:bg-neutral-900  hover:bg-gray-50 relative text-left w-full",
                 i % 2 === 0 && "d-border-r",
                 i !== projects.length - 1 && "d-border-b"
               )}

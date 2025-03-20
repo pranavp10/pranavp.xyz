@@ -14,7 +14,7 @@ const Page = () => {
           All the things I've learned and experienced in my life so far.
         </p>
       </div>
-      <div className="border-gray-200 border-t border-dashed gap-2 -mx-7 justify-between sticky top-0">
+      <div className="d-border-t  gap-2 -mx-7 justify-between sticky top-0">
         {journeyData.map(({ events, year }, index) => (
           <div
             key={year}
@@ -24,13 +24,7 @@ const Page = () => {
             )}
           >
             <div className="w-40 flex justify-center shrink-0">
-              <p
-                className={tw(
-                  `text-sm font-medium sticky top-0 bg-white z-10 `
-                )}
-              >
-                {year}
-              </p>
+              <p className="text-sm font-medium">{year}</p>
             </div>
             <div>
               {events.map((data, i) => (
@@ -72,7 +66,7 @@ const Page = () => {
             </div>
           </div>
         ))}
-        <div className="px-7">
+        <div className="px-7 d-border-b">
           <HowToDoIt
             lesson={quotes.project.lesson}
             steps={quotes.project.steps}

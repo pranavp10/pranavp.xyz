@@ -32,7 +32,7 @@ const features = [
     iconName: "gear",
     name: "Gears",
     description: "Gadgets I love, Software I use.",
-    href: "/",
+    href: "/gears",
     className: "col-start-1 col-end-2 row-start-3 row-end-4",
   },
   {

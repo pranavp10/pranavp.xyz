@@ -77,9 +77,11 @@ const Page: FC = () => (
         Productivity tools that keep my workflow seamless and efficient.
       </p>
     </div>
+    <p className="px-7 d-border-t py-3 d-border-b font-medium flex items-center gap-2">
+      Devices
+    </p>
     <div>
-      <h2 className="py-3 px-7 d-border-t font-medium">Devices</h2>
-      <div className="border-gray-200 border-t border-dashed px-14 py-3 -mx-7">
+      <div className="px-14 my-3 -mx-7">
         {gears.map(({ iconsName, title }) => (
           <div className="flex gap-6 items-center py-1.5" key={title}>
             <Icon
