@@ -1,5 +1,6 @@
 import React from "react";
 import { RESUME_DATA } from "./workData";
+import { Icon } from "@/components/Icon";
 
 const Page: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const Page: React.FC = () => {
           <SkillCategory key={category} category={category} items={items} />
         ))}
       </Section>
-      <Section title="Work Experience">
+      <Section title="Professional Experience">
         {work.map((data) => (
           <ExperienceCard key={data.company} {...data} />
         ))}
@@ -31,14 +32,26 @@ const { name, summary, work, education } = RESUME_DATA;
 
 const skills = [
   {
-    category: "Frontend",
-    items: ["React", "Next.js", "React Native", "Tailwind CSS"],
+    category: "Languages",
+    items: ["TypeScript", "JavaScript", "GO", "Python"],
   },
   {
-    category: "Backend",
-    items: ["Node.js", "PostgreSQL", "Redis", "MongoDB", "GraphQL"],
+    category: "Front-End",
+    items: ["React", "Next.js"],
   },
-  { category: "DevOps", items: ["Docker", "Kubernetes", "AWS", "CI/CD"] },
+  {
+    category: "Back-End",
+    items: ["Node.js", "Fastify", "Express.js"],
+  },
+  {
+    category: "Databases",
+    items: ["PostgresSQL", "MongoDB", "Redis"],
+  },
+  { category: "DevOps", items: ["Docker", "Kubernetes(k8s)", "AWS", "CI/CD"] },
+  {
+    category: "Tools",
+    items: ["Git", "Figma", "REST APIs", "GraphQL", "NATS"],
+  },
 ];
 
 const Section: React.FC<{ title: string; children: React.ReactNode }> = ({
@@ -58,15 +71,20 @@ const ExperienceCard: React.FC<{
   descriptions: string[];
   start: string;
   end: string;
-}> = ({ company, location, title, descriptions, start, end }) => (
+  link: string;
+}> = ({ company, location, title, descriptions, start, end, link }) => (
   <div className="py-3">
     <div className="flex justify-between items-center">
-      <p className="font-semibold">
-        {company}{" "}
+      <a
+        href={link}
+        target="_blank"
+        className="font-semibold flex items-center gap-2"
+      >
+        {company} <Icon name="social-link" className="w-1.5 h-1.5" />
         <span className="font-normal py-[1px] text-xs ml-3 px-2 d-border">
           {location}
         </span>
-      </p>
+      </a>
       <p className="text-subtle text-xs">
         {start} - {end}
       </p>

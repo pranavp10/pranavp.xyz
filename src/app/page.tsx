@@ -19,7 +19,7 @@ const features = [
     description:
       "I build side projects that make an impact and are used by people worldwide. Explore my projects below!",
     href: "/projects",
-    className: "col-start-2 col-end-4 row-start-1 row-end-2",
+    className: "md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-2",
   },
   {
     iconName: "book-closed",
@@ -64,7 +64,7 @@ export default function Home() {
       <div>
         <div className="d-border-t border-gray-200  flex items-center gap-2 justify-between sticky top-0">
           <div className="px-7 py-5 space-y-3">
-            <BentoGrid className="grid-rows-3">
+            <BentoGrid className="space-y-5 md:space-y-0 md:grid-rows-3">
               {features.map((feature) => (
                 <BentoCard key={feature.name} {...feature} />
               ))}
@@ -99,7 +99,7 @@ const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
   return (
     <div
       className={tw(
-        "grid w-full auto-rows-[22rem] grid-cols-3 gap-4",
+        "md:grid w-full auto-rows-[22rem] md:grid-cols-3 gap-4",
         className
       )}
       {...props}

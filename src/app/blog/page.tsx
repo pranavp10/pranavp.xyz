@@ -25,14 +25,14 @@ const Page = async () => {
           return (
             <div
               key={post.slug}
-              className="group relative overflow-hidden dark:hover:bg-neutral-900 hover:bg-gray-50"
+              className={tw(
+                "group relative overflow-hidden dark:hover:bg-neutral-900 hover:bg-gray-50",
+                !(i === posts.length - 1) && "d-border-b"
+              )}
             >
               <Link
                 href={`/blog/${post.slug}`}
-                className={tw(
-                  "transition-all duration-300 group-hover:-translate-y-8 ease-in-out flex relative w-full   px-4",
-                  !(i === posts.length - 1) && "d-border-b"
-                )}
+                className="transition-all duration-300 group-hover:-translate-y-8 ease-in-out flex relative w-full px-4"
               >
                 <div className="flex flex-col p-3 w-full">
                   <div className="flex justify-between items-center pb-2">
