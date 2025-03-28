@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Page = () => {
   return (
-    <div className="d-border-b h-[calc(100vh-8rem)]">
+    <div className="d-border-b min-h-[calc(100vh-8rem)]">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 p-4">
         {new Array(12).fill(0).map((_, i) => (
           <div
