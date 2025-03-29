@@ -9,7 +9,7 @@ const features = [
   {
     iconName: "user-square",
     name: "About",
-    description: "Learn more about me and my life",
+    description: "Who am I? What do I do? Find out here.",
     href: "/about",
     className: "col-start-1 col-end-2 row-start-1 row-end-2",
   },
@@ -17,37 +17,37 @@ const features = [
     iconName: "rocket",
     name: "Projects",
     description:
-      "I build side projects that make an impact and are used by people worldwide. Explore my projects below!",
+      "Side projects that people actually use (surprising, right?). Check them out!",
     href: "/projects",
     className: "md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-2",
   },
   {
     iconName: "book-closed",
     name: "Blog",
-    description: "All My learnings knowledge at one place",
+    description:
+      "Tech tips, life lessons, and the occasional bug-induced meltdown—read at your own risk.",
     href: "/blog",
     className: "row-start-2 row-end-3 col-start-1 col-end-3",
   },
   {
     iconName: "gear",
     name: "Gears",
-    description: "Gadgets I love, Software I use.",
+    description: "Cool gadgets, I probably spent too much on them.",
     href: "/gears",
     className: "col-start-1 col-end-2 row-start-3 row-end-4",
   },
   {
     iconName: "route",
     name: "Journey",
-    description: "Glimpse into my creative journey",
+    description: "How I got here—plot twists, bad code.",
     href: "/journey",
     className: "col-start-2 col-end-3 row-start-3 row-end-4",
   },
-
   {
     iconName: "briefcase",
     name: "Work",
     description:
-      "An overview of my professional experience as a Software Engineer.",
+      "An overview of my experience as a Software Engineer—projects, skills, and the impact I’ve made.",
     href: "/work",
     cta: "Learn more",
     className: "col-start-3 col-end-3 row-start-2 row-end-4",
