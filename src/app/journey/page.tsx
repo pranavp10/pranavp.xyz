@@ -14,26 +14,23 @@ const Page = () => {
           All the things I've learned and experienced in my life so far.
         </p>
       </div>
-      <div className="d-border-t  gap-2 -mx-7 justify-between sticky top-0">
+      <div className="d-border-t gap-2 justify-between sticky top-0">
         {journeyData.map(({ events, year }, index) => (
           <div
             key={year}
             className={tw(
-              "flex  py-7 px-7",
+              "md:flex md:py-7 md:px-7",
               !(index + 1 === journeyData.length) && "d-border-b"
             )}
           >
-            <div className="w-40 flex justify-center shrink-0">
+            <div className="md:w-40 px-7 shrink-0 d-border-b md:border-b-transparent! md:py-0 py-3 md:pl-12 md:pr-0 sticky top-10 bg-background z-10">
               <p className="text-sm font-medium">{year}</p>
             </div>
-            <div>
+            <div className="md:px-0 pt-4 md:pt-0 px-7">
               {events.map((data, i) => (
                 <div
                   key={data.title}
-                  className={tw(
-                    "pr-10",
-                    events.length === i + 1 ? "pb-4" : "pb-9"
-                  )}
+                  className={tw(events.length === i + 1 ? "pb-4" : "pb-9")}
                 >
                   <p className="font-medium">{data.title}</p>
                   <p className=" text-subtle text-sm">{data.description}</p>
@@ -66,7 +63,7 @@ const Page = () => {
             </div>
           </div>
         ))}
-        <div className="px-7 d-border-b">
+        <div className="d-border-b">
           <HowToDoIt
             lesson={quotes.project.lesson}
             steps={quotes.project.steps}

@@ -13,8 +13,8 @@ const Projects = () => {
           worldwide. Explore my projects below!
         </p>
       </div>
-      <div className="d-border-t px-7 -mx-7 sticky top-0">
-        <div className="grid grid-cols-2">
+      <div className="d-border-t sticky top-0">
+        <div className="grid md:grid-cols-2">
           {projects.map((project, i) => (
             <div
               key={project.title}

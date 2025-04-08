@@ -27,7 +27,7 @@ export const HowToDoIt = ({
         {title ?? "Behind the Scenes"}
       </p>
       <div className="px-7 pb-5">
-        <h2 className="font-medium">{lesson}</h2>
+        <p className="font-medium md:text-lg text-base">{lesson}</p>
         <ul className="list-decimal pt-3 space-y-1.5 ml-3">
           {steps.map((step, i) => (
             <li key={i} className="text-subtle text-sm">

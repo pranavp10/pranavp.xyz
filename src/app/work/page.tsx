@@ -81,7 +81,7 @@ const ExperienceCard: React.FC<{
         className="font-semibold flex items-center gap-2"
       >
         {company} <Icon name="social-link" className="w-1.5 h-1.5" />
-        <span className="font-normal py-[1px] text-xs ml-3 px-2 d-border">
+        <span className="font-normal py-[1px] text-xs ml-3 px-2 d-border md:block hidden">
           {location}
         </span>
       </a>
@@ -120,7 +120,7 @@ const SkillCategory: React.FC<{ category: string; items: string[] }> = ({
   items,
 }) => (
   <div className="grid grid-cols-6 items-center">
-    <p className="text-sm font-medium">{category}</p>
+    <p className="text-sm font-medium whitespace-nowrap">{category}</p>
     <ul className="flex gap-2 px-7 list-inside text-sm t-border-b items-center col-span-4">
       {items.map((skill) => (
         <li key={skill} className="whitespace-nowrap">

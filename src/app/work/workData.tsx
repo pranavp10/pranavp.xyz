@@ -81,7 +81,7 @@ export const RESUME_DATA: ResumeData = {
       location: "Delhi · On-site",
       title: "Senior Software engineer",
       start: "Aug 2024",
-      end: "Present · 1yr",
+      end: "Present",
       descriptions: [
         "Integrated ML models for passport auto-capture and face auto-capture, reducing visa rejections based on embassy requirements.",
         "Designed and built the Co-Traveler feature from scratch, increasing group travel bookings by 30%.",
@@ -96,7 +96,7 @@ export const RESUME_DATA: ResumeData = {
       location: "Remote",
       title: "Software engineer",
       start: "Aug 2022",
-      end: "Jul 2024 · 2 yr",
+      end: "Jul 2024",
       descriptions: [
         "Built an efficient input design system for the Orah Family app, increasing user satisfaction by 30% and reducing development time by 20%.",
         "Developed the Orah Nurture extension, enabling users to add pastoral notes seamlessly.",
@@ -110,7 +110,7 @@ export const RESUME_DATA: ResumeData = {
       location: "Remote",
       title: "Software engineer II",
       start: "Sep 2021",
-      end: "Aug 2022 · 1 yr 1 mos",
+      end: "Aug 2022",
       descriptions: [
         "Designed and implemented a comprehensive design system for the Now&Me app, streamlining UI components, improving consistency, and reducing development time by 40%.",
         "Developed a therapy session booking feature, streamlining therapist-patient communication and driving a 30% month-on-month increase in bookings, improving access to mental health services.",
@@ -123,7 +123,7 @@ export const RESUME_DATA: ResumeData = {
       location: "Remote",
       title: "Frontend Intern -> Frontend Developer",
       start: "May 2020",
-      end: "Aug 2021 · 1 yr 4 mos",
+      end: "Aug 2021",
       descriptions: [
         "Migrated the course catalog website from CRA to Next.js, enhancing SEO, mobile performance, and page load speed by 50% with a seamlessly integrated new design.",
         "Developed a user-friendly creator dashboard for the Super-Learning app, enabling seamless course creation and real-time student activity monitoring with interactive visual insights.",
@@ -136,7 +136,7 @@ export const RESUME_DATA: ResumeData = {
       location: "Bangalore · On-site",
       title: "Software Engineer",
       start: "Sep 2019",
-      end: "Apr 2020 · 8 mos",
+      end: "Apr 2020",
       descriptions: [
         "Designed and implemented an employee management system, automating attendance, leave tracking, and medical records, reducing administrative workload by 60%.",
         "Built a poultry management app to track egg production, medication, and daily activities, improving operational efficiency by 40% and reducing manual record-keeping errors by 90%.",
