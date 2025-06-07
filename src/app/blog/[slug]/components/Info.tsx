@@ -15,7 +15,7 @@ const Info = ({
     <div className="flex gap-2 items-center">
       <Icon
         name={iconName}
-        className={`w-6 h-6 ${color ? color : "!text-yellow-500"} `}
+        className={`w-4 h-4 ${color ? color : "!text-yellow-500"} `}
         gradientName="gradient"
       />
       <div>
@@ -24,7 +24,7 @@ const Info = ({
         </p>
       </div>
     </div>
-    <p className="text-sm text-pretty mt-1 ml-8">{description}</p>
+    <p className="text-sm text-pretty mt-1 ml-6">{description}</p>
   </div>
 );
 
