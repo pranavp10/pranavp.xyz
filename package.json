@@ -18,7 +18,7 @@
     "clsx": "^2.1.1",
     "codehike": "^1.0.5",
     "gray-matter": "^4.0.3",
-    "next": "15.2.1",
+    "next": "15.2.8",
     "next-mdx-remote": "^5.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
